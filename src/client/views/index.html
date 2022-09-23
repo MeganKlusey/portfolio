@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161918657-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-161918657-2');
+	</script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+
+	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+	<title>Megan Klusey Portfolio</title>
+	<link rel='icon' href='icon.png'/>
+	<link href='https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald' rel='stylesheet'/>
+	<meta name='viewport' content='width=device-width, initial-scale=1'/>
+	<meta charset='UTF-8'/>
+</head>
+
+<body>
+	<div id='overlay' onclick='off()'>
+		<div class='overlayImg'>
+			<video id="devicesVid" autoplay playinline muted loop>
+					<source src="berlineastsidegalleryberlin.mp4" />
+			</video>
+		</div>
+	</div>
+	<div id='overlay2' onclick='off2()'>
+		<div class='overlayImg'>
+			<video id="devicesVid" autoplay playinline muted loop>
+					<source src="netflix.mp4" />
+			</video>
+		</div>
+	</div>
+	<div id='overlay3' onclick='off3()'>
+		<div class='overlayImg'>
+			<video id="devicesVid" autoplay playinline muted loop>
+					<source src="blossm.mp4" />
+			</video>
+		</div>
+	</div>
+	<div id='overlay4' onclick='off4()'>
+		<div class='overlayImg'>
+			<video id="devicesVid" autoplay playinline muted loop>
+					<source src="todolist.mp4" />
+			</video>
+		</div>
+	</div>
+	<div id='overlay5' onclick='off5()'>
+		<div class='overlayImg'>
+			<img src='elephantlarge.png' alt='gif'>
+		</div>
+	</div>
+	
+	<div id='header'></div>
+	<div class='main' id='home'></div>
+  <div class='main' id='about'></div>
+	<div class='main' id='work'></div>
+	<div class='main' id='contact'>
+	    
+	</div>
+</body>
+</html>
