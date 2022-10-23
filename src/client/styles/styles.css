@@ -8,7 +8,7 @@ body {
   padding: 0;
 }
 
-#header {
+.header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -33,7 +33,7 @@ body {
   z-index: 3;
 }
 
-#header a {
+.header a {
   color: #b8b8b8;
   text-decoration: none;
 }
@@ -42,7 +42,7 @@ body {
   #title {
     font-size: 120px;
   }
-  .navBtn {
+  .nav-btn {
     font-size: 32px;
   }
   .main {
@@ -68,7 +68,7 @@ body {
         justify-content: space-around;
     position: relative;
   }
-  .content {
+  .more-arrows-wrapper {
     position: absolute;
     left: 50%;
     top: 80%;
@@ -83,7 +83,7 @@ body {
     padding-top: 60px;
     text-align: center;
   }
-  #contactForm {
+  .contactForm {
     font-family: 'Cardo';
     margin-top: 30px;
     text-align: center;
@@ -103,7 +103,7 @@ body {
   #title {
     font-size: 55px;
   }
-  .navBtn {
+  .nav-btn {
     font-size: 24px;
   }
   .main {
@@ -129,7 +129,7 @@ body {
     position: relative;
     margin-bottom: 80px;
   }
-  .content {
+  .more-arrows-wrapper {
     position: absolute;
     left: 50%;
     top: 70%;
@@ -145,7 +145,7 @@ body {
     -webkit-transform: translateX(0%) translateY(0%);
             transform: translateX(0%) translateY(0%);
   }
-  #contactForm {
+  .contactForm {
     font-family: 'Cardo';
     margin-top: 0px;
     text-align: center;
@@ -161,7 +161,7 @@ body {
   }
 }
 
-#work, #contact {
+.work, .contact {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -181,7 +181,7 @@ body {
   position: relative;
 }
 
-.aboutText {
+#aboutText {
   text-align: center;
   -webkit-transform: translateX(0%) translateY(15%);
           transform: translateX(0%) translateY(15%);
@@ -197,7 +197,7 @@ body {
   transition: 0.25s;
 }
 
-.headerShrunk {
+.header-shrunk {
   background-color: white;
 }
 
@@ -307,7 +307,7 @@ polygon.arrowTop {
   opacity: 0.5;
 }
 
-#home {
+.home {
   background-color: white;
   height: 100vh;
   margin: 0 auto;
@@ -520,7 +520,7 @@ p {
   font-size: 24px;
 }
 
-#contactDescription {
+.contactDescription {
   max-width: 600px;
   width: 100%;
 }

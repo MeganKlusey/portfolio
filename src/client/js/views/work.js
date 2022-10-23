@@ -14,9 +14,6 @@ class Work extends React.Component {
                   <line class='bottom' x1='460' y1='223.69' x2='-920' y2='223.69'/>
                   <line class='right' x1='460' y1='-447.38' x2='460' y2='671.07'/>
                   <img src='berlineastsidegalleryberlin.png' class='thumbnail' alt='Berlin East Side Gallery Berlin Thumbnail'/>
-                  <div class="middle">
-                    <div class="play">▶</div>
-                  </div>
                 </svg>
               </div>
             </div>
@@ -37,9 +34,6 @@ class Work extends React.Component {
                   <line class='bottom' x1='460' y1='223.69' x2='-920' y2='223.69'/>
                   <line class='right' x1='460' y1='-447.38' x2='460' y2='671.07'/>
                   <img src='netflix.png' class='thumbnail' alt='Netflix Thumbnail'/>
-                  <div class="middle">
-                    <div class="play">▶</div>
-                  </div>
                 </svg>
               </div>
             </div>
@@ -60,9 +54,6 @@ class Work extends React.Component {
                   <line class='bottom' x1='460' y1='223.69' x2='-920' y2='223.69'/>
                   <line class='right' x1='460' y1='-447.38' x2='460' y2='671.07'/>
                   <img src='blossm.png' class='thumbnail' alt='Blossm Thumbnail'/>
-                  <div class="middle">
-                    <div class="play">▶</div>
-                  </div>
                 </svg>
               </div>
             </div>
@@ -82,9 +73,6 @@ class Work extends React.Component {
                   <line class='bottom' x1='460' y1='223.69' x2='-920' y2='223.69'/>
                   <line class='right' x1='460' y1='-447.38' x2='460' y2='671.07'/>
                   <img src='todolist.png' class='thumbnail' alt='To-Do List App Thumbnail'/>
-                  <div class="middle">
-                    <div class="play">▶</div>
-                  </div>
                 </svg>
               </div>
             </div>
@@ -105,9 +93,6 @@ class Work extends React.Component {
                   <line class='bottom' x1='460' y1='223.69' x2='-920' y2='223.69'/>
                   <line class='right' x1='460' y1='-447.38' x2='460' y2='671.07'/>
                   <img src='elephant.png' class='thumbnail' alt='Elephant Thumbnail'/>
-                  <div class="middle">
-                    <div class="play">⤢</div>
-                  </div>
                 </svg>
               </div>
             </div>
@@ -117,13 +102,6 @@ class Work extends React.Component {
               <p class='webOverview'>Photo manipulation of an elephant using a graphics editor (Krita).
               This project demonstrates merging of layers, glow effects and multiple brush techniques.</p>
             </div>
-          </div>
-          <div class='dots'>
-            <span class='dot' onclick='currentSlide(1)'></span> 
-            <span class='dot' onclick='currentSlide(2)'></span>
-            <span class='dot' onclick='currentSlide(3)'></span>
-            <span class='dot' onclick='currentSlide(4)'></span>
-            <span class='dot' onclick='currentSlide(5)'></span>
           </div>
         </div>
         <a class='prev' onclick='plusSlides(-1)'>

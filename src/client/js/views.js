@@ -1,0 +1,5 @@
+import './views/header'
+import './views/home'
+import './views/about'
+import './views/work'
+import './views/contact'

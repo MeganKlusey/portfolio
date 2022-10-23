@@ -1,0 +1,81 @@
+.formControl {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid gray;
+	color: #000;
+	font-size: 18px;
+	margin-bottom: 16px;
+	max-width: 600px;
+	outline: none;
+	width: 100%;
+}
+
+form {
+	input {
+		font-family: 'Cardo';
+		height: 45px;
+
+		:-ms-input-placeholder {
+			color: #999999;
+		}
+	}
+
+	textarea {
+		font-family: 'Cardo';
+		height: 100px;
+		overflow: auto;
+	}
+
+	.submit {
+		background: #003478;
+		border-color: transparent;
+		color: #ffffff;
+		font-family: 'Oswald';
+		font-size: 20px;
+		height: 40px;
+		letter-spacing: 2px;
+		margin-top: 12px;
+		overflow: hidden;
+		text-align: center;
+		width: 50%;
+	
+		&:hover {
+			color: #ffffff;
+			cursor: pointer;
+			animation: shine 2s infinite;
+			-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 1) 30%, transparent 50%, rgba(0, 0, 0, 1) 70%);
+			-webkit-mask-size: 200%;
+		}
+	}
+}
+
+.fade {
+	animation-duration: 0.5s;
+	animation-name: fade;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.contactDescription {
+	max-width: 600px;
+	width: 100%;
+}
