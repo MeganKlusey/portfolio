@@ -64,7 +64,6 @@ $(document).ready(function() {
 	})
 });
 
-// contact form
 function submitForm() {
 	document.getElementById('submit').disabled = true;
 	document.getElementById('status').innerHTML = 'Please wait...';
@@ -88,16 +87,4 @@ function submitForm() {
 		}
 	};
 	ajax.send(formData);
-}
-
-function on() {
-	document.getElementById('overlay').style.display='block';
-	document.documentElement.style.overflowY='hidden';
-	document.body.scroll='no';
-}
-
-function off() {
-	document.getElementById('overlay').style.display='none';
-	document.documentElement.style.overflowY='scroll';
-	document.body.scroll='yes';
 }
