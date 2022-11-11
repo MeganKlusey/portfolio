@@ -12,7 +12,11 @@
 	.more-arrows-wrapper {
 		width: 75px;
 		height: 65px;
-		position: relative;
+		position: absolute;
+		left: 50%;
+		top: 80%;
+		overflow: hidden;
+		transform: translate(-50%, -50%);
 
 		.base, .gradient {
 			position: absolute;
@@ -27,7 +31,7 @@
 			font-size: 120px;
 			text-align: center;
 			transition: 0.25s;
-			animation: shine 1s forwards;
+			animation: shine 3s infinite 3s;
 			-webkit-mask-image: linear-gradient(-75deg, #fff 30%, #ffffff30 40%, #fff 70%);
 			-webkit-mask-size: 200%;
 		}
@@ -38,6 +42,9 @@
 	
 		&:hover {
 			.base	{
+				animation: none;
+				-webkit-mask-image: none;
+				-webkit-mask-size: 0%;
 				polygon {
 					&.arrow-top {
 						fill: #003478;
@@ -58,6 +65,7 @@
 			}
 
 			.gradient {
+				visibility: hidden;
 				polygon {
 					&.arrow-top {
 						opacity: 0;

@@ -16,55 +16,6 @@
 		}
 	}
 
-	#about {
-		align-items: center;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		height: 100vh;
-		max-height: auto;
-		justify-content: space-around;
-		position: relative;
-
-		@media only screen and (max-width: 767px) {
-			margin-bottom: 80px;
-		}
-	}
-
-	.more-arrows-wrapper {
-		position: absolute;
-		left: 50%;
-		top: 80%;
-		overflow: hidden;
-		transform: translate(-50%, -50%);
-	}
-
-	.contactForm {
-		font-family: 'Cardo';
-		margin-top: 30px;
-		text-align: center;
-		transform: translateX(0%) translateY(14%);
-		transition: all 1s ease-in-out;
-
-		@media only screen and (max-width: 767px) {
-			.contactForm {
-				margin-top: 0px;
-			}
-		}
-
-	}
-
-	.marker {
-		position: absolute;
-		left: 0;
-		height: 4px;
-		width: 0;
-		background: #d4af37;
-		bottom: -8px;
-		transition: 0.5s;
-		border-radius: 4px;
-	}
-
 	@-webkit-keyframes shine {
 		from {
 			-webkit-mask-position: 150%;

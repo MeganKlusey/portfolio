@@ -79,3 +79,18 @@ form {
 	max-width: 600px;
 	width: 100%;
 }
+
+.contactForm {
+	font-family: 'Cardo';
+	margin-top: 30px;
+	text-align: center;
+	transform: translateX(0%) translateY(14%);
+	transition: all 1s ease-in-out;
+
+	@media only screen and (max-width: 767px) {
+		.contactForm {
+			margin-top: 0px;
+		}
+	}
+
+}

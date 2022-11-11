@@ -33,7 +33,7 @@
 			font-size: 120px;
 			text-align: center;
 			transition: 0.25s;
-			animation: shine 1s forwards;
+			animation: shine 3s infinite 3s;
 			-webkit-mask-image: linear-gradient(-75deg, #fff 30%, #ffffff30 40%, #fff 70%);
 			-webkit-mask-size: 200%;
 
@@ -91,5 +91,16 @@
 				-webkit-text-decoration-color: #d4af37;
 			}
 		}
+	}
+
+	.marker {
+		position: absolute;
+		left: 0;
+		height: 4px;
+		width: 0;
+		background: #d4af37;
+		bottom: -8px;
+		transition: 0.5s;
+		border-radius: 4px;
 	}
 }
