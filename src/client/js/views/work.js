@@ -6,7 +6,7 @@ class Work extends React.Component {
       <>
         <div class='slideshowContainer'>
           <div class='mySlides fade'>
-            <div class='thumbnailDiv' onclick="on()">
+            <div class='thumbnailDiv' onClick="on()">
               <div class='box'>
                 <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'>
                   <line class='top' x1='-920' y1='0' x2='460' y2='0'/>
@@ -26,7 +26,7 @@ class Work extends React.Component {
             </div>
           </div>
           <div class='mySlides fade'>
-            <div class='thumbnailDiv' onclick="on2()">
+            <div class='thumbnailDiv' onClick="on2()">
               <div class='box'>
                 <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'>
                   <line class='top' x1='-920' y1='0' x2='460' y2='0'/>
@@ -46,7 +46,7 @@ class Work extends React.Component {
             </div>
           </div>
           <div class='mySlides fade'>
-            <div class='thumbnailDiv' onclick="on3()">
+            <div class='thumbnailDiv' onClick="on3()">
               <div class='box'>
                 <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'>
                   <line class='top' x1='-920' y1='0' x2='460' y2='0'/>
@@ -65,7 +65,7 @@ class Work extends React.Component {
             </div>
           </div>
           <div class='mySlides fade'>
-            <div class='thumbnailDiv' onclick="on4()">
+            <div class='thumbnailDiv' onClick="on4()">
               <div class='box'>
                 <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'>
                   <line class='top' x1='-920' y1='0' x2='460' y2='0'/>
@@ -85,7 +85,7 @@ class Work extends React.Component {
             </div>
           </div>
           <div class='mySlides fade'>
-            <div class='thumbnailDiv' onclick="on5()">
+            <div class='thumbnailDiv' onClick="on5()">
               <div class='box'>
                 <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'>
                   <line class='top' x1='-920' y1='0' x2='460' y2='0'/>
@@ -104,13 +104,13 @@ class Work extends React.Component {
             </div>
           </div>
         </div>
-        <a class='prev' onclick='plusSlides(-1)'>
+        <a class='prev' onClick='plusSlides(-1)'>
           <div class='prev'>
             <div class='prevTop'></div>
             <div class='prevBottom'></div>
           </div>
         </a>
-        <a class='next' onclick='plusSlides(1)'>
+        <a class='next' onClick='plusSlides(1)'>
           <div class='next'>
             <div class='nextTop'></div>
             <div class='nextBottom'></div>

@@ -4,7 +4,7 @@ class Contact extends React.Component {
   render() {
     return (
       <>
-        <form id='contactForm' onsubmit='submitForm();'>
+        <form id='contactForm' onSubmit='submitForm();'>
           <p id='contactDescription'>If you have an enquiry or looking to hire, please get in touch using the form below.</p>
           <br/>
           <input id='name' name='name' type='text' class='formControl' placeholder='Name..' required />
