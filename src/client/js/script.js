@@ -61,14 +61,17 @@ $(document).ready(function() {
 function resizeHeader() {
 	const navItems = ['about', 'work', 'contact']
 
-	if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+	if(document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+		document.querySelector(`#header`).classList.add("shrunk");
+		document.querySelector(`#header`).style.transition = "0.5s";
 		document.querySelector(`#header .title-wrapper .base`).style.fontSize='55px';
 		document.querySelector(`#header .title-wrapper .gradient`).style.fontSize='55px';
 		$.each(navItems, function(i, item) {
 			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .base`).style.fontSize='28px';
 			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .gradient`).style.fontSize='28px';
-		})	
+		})
 	} else {
+		document.querySelector(`#header`).classList.remove("shrunk");
 		document.querySelector(`#header .title-wrapper .base`).style.fontSize='120px';
 		document.querySelector(`#header .title-wrapper .gradient`).style.fontSize='120px';
 		$.each(navItems, function(i, item) {
