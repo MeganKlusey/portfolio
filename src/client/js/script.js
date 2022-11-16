@@ -1,6 +1,6 @@
 // shrinking header
 window.onscroll = function() {
-	scrollFunction();
+	resizeHeader();
 };
 
 VANTA.BIRDS({
@@ -22,16 +22,18 @@ VANTA.BIRDS({
 });
 
 $(document).ready(function() {
-    scrollFunction();
+    resizeHeader();
     $(window).scroll(function() {
-      scrollFunction();
+      resizeHeader();
     })
 	}
 );
 
+
 // smooth scrolling
 $(document).ready(function() {
 	let scrollLink = $('.scroll');
+
 	scrollLink.click(function(e) {
 		e.preventDefault();
 		$('html, body').animate({
@@ -52,17 +54,29 @@ $(document).ready(function() {
 			}
 		})
 	})
-	
-	$(window).scroll(function() {
-		let divOffset = $('.header').offset().top - 300;
-		let windowYmax = 1;
-		if (divOffset > windowYmax) {
-			$('.more-arrows-wrapper').addClass("hide");
-		} else {
-			$('.more-arrows-wrapper').removeClass("hide");
-		}
-	})
 });
+
+
+
+function resizeHeader() {
+	const navItems = ['about', 'work', 'contact']
+
+	if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+		document.querySelector(`#header .title-wrapper .base`).style.fontSize='55px';
+		document.querySelector(`#header .title-wrapper .gradient`).style.fontSize='55px';
+		$.each(navItems, function(i, item) {
+			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .base`).style.fontSize='28px';
+			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .gradient`).style.fontSize='28px';
+		})	
+	} else {
+		document.querySelector(`#header .title-wrapper .base`).style.fontSize='120px';
+		document.querySelector(`#header .title-wrapper .gradient`).style.fontSize='120px';
+		$.each(navItems, function(i, item) {
+			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .base`).style.fontSize='36px';
+			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .gradient`).style.fontSize='36px';
+		})
+	}
+}
 
 function submitForm() {
 	document.getElementById('submit').disabled = true;
@@ -74,13 +88,13 @@ function submitForm() {
 	formData.append('message', document.getElementById('message').value);
 	let ajax = new XMLHttpRequest();
 	ajax.open('POST', 'contactForm.php');
-	ajax.onreadystatechange = function(){
-		if(ajax.readyState == 4 && ajax.status == 200){
-			if(ajax.responseText == 'success'){
+	ajax.onreadystatechange = function() {
+		if(ajax.readyState == 4 && ajax.status == 200) {
+			if(ajax.responseText == 'success') {
 				document.getElementById('contactForm').innerHTML = '<h2>Thank you, '
 				+document.getElementById('name').value +', your message has been sent.</h2>';
 			}
-			else{
+			else {
 				document.getElementById('status').innerHTML = ajax.responseText;
 				document.getElementById('submit').disabled = false;
 			}
