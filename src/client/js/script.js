@@ -13,7 +13,7 @@ VANTA.BIRDS({
 	minWidth: 200.00,
 	scale: 1.00,
 	scaleMobile: 1.00,
-	backgroundColor: 0xfffffff,
+	backgroundColor: 0xffffff,
 	colorMode: 'lerpGradient',
 	birdSize: 3.10,
 	separation: 50.00,
@@ -61,9 +61,9 @@ $(document).ready(function() {
 function resizeHeader() {
 	const navItems = ['about', 'work', 'contact']
 
-	if(document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+	if(document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
 		document.querySelector(`#header`).classList.add("shrunk");
-		document.querySelector(`#header`).style.transition = "0.5s";
+		document.querySelector(`#header`).style.transition = "0.4s";
 		document.querySelector(`#header .title-wrapper .base`).style.fontSize='55px';
 		document.querySelector(`#header .title-wrapper .gradient`).style.fontSize='55px';
 		$.each(navItems, function(i, item) {
