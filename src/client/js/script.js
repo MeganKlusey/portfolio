@@ -66,17 +66,21 @@ function resizeHeader() {
 		document.querySelector(`#header`).style.transition = "0.4s";
 		document.querySelector(`#header .title-wrapper .base`).style.fontSize='55px';
 		document.querySelector(`#header .title-wrapper .gradient`).style.fontSize='55px';
+		document.querySelector(`#header .title-wrapper .base a`).style.color='#b8b8b8';
 		$.each(navItems, function(i, item) {
 			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .base`).style.fontSize='28px';
 			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .gradient`).style.fontSize='28px';
+			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .base a`).style.color='#b8b8b8';
 		})
 	} else {
 		document.querySelector(`#header`).classList.remove("shrunk");
 		document.querySelector(`#header .title-wrapper .base`).style.fontSize='120px';
 		document.querySelector(`#header .title-wrapper .gradient`).style.fontSize='120px';
+		document.querySelector(`#header .title-wrapper .base a`).style.color='transparent';
 		$.each(navItems, function(i, item) {
 			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .base`).style.fontSize='36px';
 			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .gradient`).style.fontSize='36px';
+			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .base a`).style.color='transparent';
 		})
 	}
 }

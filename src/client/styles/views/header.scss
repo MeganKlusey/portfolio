@@ -23,25 +23,6 @@
 	.title-wrapper, .about-wrapper, .work-wrapper, .contact-wrapper {
 		position: relative;
 		width: 100%;
-
-		.shine {
-			background: #b8b8b8 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
-			background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
-			-webkit-background-size: 200%;
-			-webkit-background-clip: text;
-			-webkit-animation-name: shine;
-			-webkit-animation-duration: 3s;
-			-webkit-animation-iteration-count: infinite;
-		}
-
-		@-webkit-keyframes shine {
-			0% {
-				background-position: 150%
-			}
-			100% {
-				background-position: -50%
-			}
-		}
 	
 		.base, .gradient {
 			transform: translateX(-50%);
@@ -94,7 +75,7 @@
 		}
 	}
 	
-	.nav {
+	nav {
 		align-items: center;
 		display: flex;
 		flex-direction: row;
@@ -115,15 +96,62 @@
 			}
 		}
 	}
+}
 
-	.marker {
-		position: absolute;
-		left: 0;
-		height: 4px;
-		width: 0;
-		background: #d4af37;
-		bottom: -8px;
-		transition: 0.5s;
-		border-radius: 4px;
+.shine {
+	background: #b8b8b8 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+	background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+	-webkit-background-size: 200%;
+	-webkit-background-clip: text;
+	-webkit-animation-name: shine;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+
+	&.about {
+		-webkit-animation-name: shineAbout;
+	}
+
+	&.work {
+		-webkit-animation-name: shineWork;
+	}
+
+	&.contact {
+		-webkit-animation-name: shineContact;
+	}
+}
+
+@-webkit-keyframes shine {
+	0% {
+		background-position: 150%
+	}
+	100% {
+		background-position: -50%
+	}
+}
+
+@-webkit-keyframes shineAbout {
+	0% {
+		background-position: 150%
+	}
+	100% {
+		background-position: -50%
+	}
+}
+
+@-webkit-keyframes shineWork {
+	0% {
+		background-position: 150%
+	}
+	120% {
+		background-position: -50%
+	}
+}
+
+@-webkit-keyframes shineContact {
+	0% {
+		background-position: 150%
+	}
+	340% {
+		background-position: -50%
 	}
 }
