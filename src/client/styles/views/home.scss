@@ -26,10 +26,6 @@
 			top: 0;
 			height: 100%;
 			width: 100%;
-			font-weight: lighter;
-			line-height: 1.2;
-			font-size: 120px;
-			text-align: center;
 			transition: 0.25s;
 			animation: shine 3s infinite 3s;
 			-webkit-mask-image: linear-gradient(-75deg, #fff 30%, #ffffff30 40%, #fff 70%);
@@ -86,6 +82,24 @@
 		}
 	}
 
+	// .shine {
+	// 	background: transparent -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+	// 	background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+	// 	-webkit-background-size: 200%;
+	// 	-webkit-animation-name: shine;
+	// 	-webkit-animation-duration: 3s;
+	// 	-webkit-animation-iteration-count: infinite;
+	// }
+
+	// @-webkit-keyframes shine {
+	// 	0% {
+	// 		background-position: 150%
+	// 	}
+	// 	100% {
+	// 		background-position: -50%
+	// 	}
+	// }
+
 	&::after {
 		content : "";
 		position: absolute;
@@ -97,4 +111,9 @@
 		width: 100%;
 		height: 8em;
 	}
+}
+
+.base {
+	-webkit-clip-path: url(#mask);
+  clip-path: url(#mask);
 }
