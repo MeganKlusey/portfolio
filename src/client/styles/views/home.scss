@@ -32,15 +32,15 @@
 			-webkit-mask-size: 200%;
 		}
 
-		svg:hover stop {
-			stop-color: #fff;
-		}
-
 		polygon {
 			transition: all 0.2s ease-out;
 		}
 	
 		&:hover {
+			stop:nth-child(2) {
+				stop-color: #fff;
+			}
+
 			.base	{
 				animation: none;
 				-webkit-mask-image: none;

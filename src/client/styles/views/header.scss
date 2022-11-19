@@ -22,7 +22,7 @@
 
 	.title-wrapper, .about-wrapper, .work-wrapper, .contact-wrapper {
 		position: relative;
-		width: 100%;
+		width: auto;
 	
 		.base, .gradient {
 			transform: translateX(-50%);
@@ -79,7 +79,7 @@
 		align-items: center;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: space-around;
 		list-style: none;
 		position: relative;
 		width: 100%;
