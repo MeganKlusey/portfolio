@@ -18,7 +18,7 @@ class Home extends React.Component {
                   repeatCount="indefinite" />
                 <animate
                   attributeName="x2"
-                  values="-50;250"
+                  values="-175;420"
                   dur="4s"
                   repeatCount="indefinite" />
               </linearGradient>
