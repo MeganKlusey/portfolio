@@ -3,23 +3,23 @@ window.onscroll = function() {
 	resizeHeader();
 };
 
-// VANTA.BIRDS({
-// 	el: '#home',
-// 	color1: 0xb7e2e0,
-// 	color2: 0x5b79c0,
-// 	mouseControls: true,
-// 	touchControls: true,
-// 	minHeight: 200.00,
-// 	minWidth: 200.00,
-// 	scale: 1.00,
-// 	scaleMobile: 1.00,
-// 	backgroundColor: 0xFFFFFF,
-// 	colorMode: 'lerpGradient',
-// 	birdSize: 3.10,
-// 	separation: 50.00,
-// 	wingSpan: 40.00,
-// 	quantity: 2.00
-// });
+VANTA.BIRDS({
+	el: '#home',
+	color1: 0xb7e2e0,
+	color2: 0x5b79c0,
+	mouseControls: true,
+	touchControls: true,
+	minHeight: 200.00,
+	minWidth: 200.00,
+	scale: 1.00,
+	scaleMobile: 1.00,
+	backgroundColor: 0xFFFFFF,
+	colorMode: 'lerpGradient',
+	birdSize: 3.10,
+	separation: 50.00,
+	wingSpan: 40.00,
+	quantity: 2.00
+});
 
 $(document).ready(function() {
     resizeHeader();
