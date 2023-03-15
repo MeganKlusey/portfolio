@@ -1,17 +1,53 @@
-.thumbnail {
-	width: 100%;
-	opacity: 1;
-	display: block;
-	height: auto;
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+
+.work-container {
+	display: flex;
+	flex-wrap: wrap;
+  gap: 10px;
 }
 
-.thumbnailDiv {
+.thumbnail-div {
+	border: 1px solid #000;
 	cursor: pointer;
-	display: inline-block;
-	vertical-align: middle;
+	display: flex;
+  position: relative;
+	width: calc(25% - 10px);
+
+	@media only screen and (max-width: $xl) {
+		width: calc((100% / 3) - 10px);
+	}
+
+	@media only screen and (max-width: $lg) {
+		width: calc(50% - 10px);
+	}
+
+	@media only screen and (max-width: $sm) {
+		width: calc(100% - 10px);
+	}
+
+	.box {
+		flex: 1;
+		height: 0;
+		position: relative;
+		padding-bottom: 56.25%;
+
+		.thumbnail {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 56.25%;
+		}
+	}
 }
 
-.workDescription {
+.work-description {
 	display: inline-block;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -21,21 +57,21 @@
 }
 
 #overlay {
-	position: fixed; /* Sit on top of the page content */
-	display: none; /* Hidden by default */
-	width: 100%; /* Full width (cover the whole page) */
-	height: 100%; /* Full height (cover the whole page) */
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.85); /* Black background with opacity */
-	z-index: 4; /* Specify a stack order in case you're using a different order for other elements */
-	cursor: pointer; /* Add a pointer on hover */
+	background-color: rgba(0, 0, 0, 0.85);
+	z-index: 4;
+	cursor: pointer;
 	transform: translateX(0) translateY(0);
 }
 
-.overlayImg {
+.overlay-img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -44,6 +80,6 @@
 	overflow: hidden;
 }
 
-.webOverview {
+.web-overview {
 	font-size: 20px;
 }
