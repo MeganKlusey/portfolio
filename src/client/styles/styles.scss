@@ -9,15 +9,16 @@
 	padding: 0;
 
 	.main {
-		padding: 0 150px;
-
-		@media only screen and (max-width: 767px) {
-			padding: 0 20px;
-		}
+		margin: 0 auto;
+		width: 80%;
 	}
 
 	p {
 		font-family: 'Cardo';
 		font-size: 24px;
+	}
+
+	#about, #work, #contact{
+		min-height: 100vh;
 	}
 }
