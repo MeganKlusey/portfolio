@@ -94,11 +94,11 @@ function submitForm() {
 	formData.append('email', document.getElementById('email').value);
 	formData.append('message', document.getElementById('message').value);
 	let ajax = new XMLHttpRequest();
-	ajax.open('POST', 'contactForm.php');
+	ajax.open('POST', 'contact-form.php');
 	ajax.onreadystatechange = function() {
 		if(ajax.readyState == 4 && ajax.status == 200) {
 			if(ajax.responseText == 'success') {
-				document.getElementById('contactForm').innerHTML = '<h2>Thank you, '
+				document.getElementById('contact-form').innerHTML = '<h2>Thank you, '
 				+document.getElementById('name').value +', your message has been sent.</h2>';
 			}
 			else {
