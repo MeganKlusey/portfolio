@@ -3,17 +3,11 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	height: 100vh;
 	max-height: auto;
 	justify-content: space-around;
 	position: relative;
 
 	@media only screen and (max-width: 767px) {
-		margin-bottom: 80px;
-	}
-
-	#aboutText {
-		text-align: center;
-		transform: translateX(0%) translateY(15%);
+		padding-bottom: 80px;
 	}
 }
