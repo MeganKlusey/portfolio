@@ -1,4 +1,4 @@
-// shrinking header
+// Shrinking header
 window.onscroll = function() {
 	resizeHeader();
 };
@@ -29,8 +29,7 @@ $(document).ready(function() {
 	}
 );
 
-
-// smooth scrolling
+// Smooth scrolling
 $(document).ready(function() {
 	let scrollLink = $('.scroll');
 
@@ -56,12 +55,10 @@ $(document).ready(function() {
 	})
 });
 
-
-
 function resizeHeader() {
 	const navItems = ['about', 'work', 'contact']
 
-	if(document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+	if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
 		document.querySelector(`#header`).classList.add("shrunk");
 		document.querySelector(`#header`).style.transition = "0.4s";
 		document.querySelector(`#header .title-wrapper .base`).style.fontSize='55px';
