@@ -3,7 +3,7 @@
 class Header extends React.Component {
   render() {
     return (
-      <div>
+      <div class="header">
         <div class='title-wrapper'>
           <h1 class='base'><a class='title-btn scroll' href='#home'><div class="shine">MEGAN KLUSEY</div></a></h1>
           <h1 class='gradient' data-text='MEGAN KLUSEY'><a class='title-btn scroll' href='#home'></a></h1>
