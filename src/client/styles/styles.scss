@@ -18,7 +18,10 @@
 		font-size: 24px;
 	}
 
-	#about, #work, #contact{
-		min-height: 100vh;
+	#about, #work, #contact {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: calc(100vh - 57.5px);
 	}
 }
