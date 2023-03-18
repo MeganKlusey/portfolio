@@ -29,7 +29,7 @@ form {
 	.submit {
 		background: #003478;
 		border-color: transparent;
-		color: #ffffff;
+		color: #fff;
 		font-family: 'Oswald';
 		font-size: 20px;
 		height: 40px;
@@ -37,7 +37,7 @@ form {
 		margin-top: 12px;
 		overflow: hidden;
 		text-align: center;
-		width: 50%;
+		width: 100%;
 	
 		&:hover {
 			color: #ffffff;
@@ -75,22 +75,21 @@ form {
 	}
 }
 
-.contact-description {
-	max-width: 600px;
-	width: 100%;
-}
+.contact-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 
-.contact-form {
-	font-family: 'Cardo';
-	margin-top: 30px;
-	text-align: center;
-	transform: translateX(0%) translateY(14%);
-	transition: all 1s ease-in-out;
-
-	@media only screen and (max-width: 767px) {
-		.contact-form {
-			margin-top: 0px;
-		}
+	.contact-description {
+		max-width: 600px;
+		width: 100%;
 	}
 
+	.contact-form {
+		font-family: 'Cardo';
+		text-align: center;
+		transform: translateX(0%) translateY(14%);
+		transition: all 1s ease-in-out;
+		width: 100%;
+	}
 }
