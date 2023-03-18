@@ -4,7 +4,7 @@ class Contact extends React.Component {
   render() {
     return (
       <div class="contact-container">
-        <p id='contact-description'>If you have an enquiry or looking to hire, please get in touch using the form below.</p>
+        <p class='contact-description'>Please get in touch using the form below.</p>
         <br/>
         <form class='contact-form' onSubmit='submitForm();'>
           <input id='name' name='name' type='text' class='form-control' placeholder='Name..' required />
