@@ -3,10 +3,10 @@
 class Contact extends React.Component {
   render() {
     return (
-      <>
-        <form id='contact-form' onSubmit='submitForm();'>
-          <p id='contact-description'>If you have an enquiry or looking to hire, please get in touch using the form below.</p>
-          <br/>
+      <div class="contact-container">
+        <p id='contact-description'>If you have an enquiry or looking to hire, please get in touch using the form below.</p>
+        <br/>
+        <form class='contact-form' onSubmit='submitForm();'>
           <input id='name' name='name' type='text' class='form-control' placeholder='Name..' required />
           <br/>
           <input id='email' name='email' type='email' class='form-control' placeholder='Email address..' required />
@@ -17,7 +17,7 @@ class Contact extends React.Component {
           <br/>
           <span id='status'></span>
         </form>
-      </> 
+      </div> 
     );
   }
 }
