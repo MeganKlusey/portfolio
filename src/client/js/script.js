@@ -1,8 +1,3 @@
-// Shrinking header
-window.onscroll = function() {
-	resizeHeader();
-};
-
 VANTA.BIRDS({
 	el: '#home',
 	color1: 0xb7e2e0,
@@ -21,14 +16,6 @@ VANTA.BIRDS({
 	quantity: 2.00
 });
 
-$(document).ready(function() {
-    resizeHeader();
-    $(window).scroll(function() {
-      resizeHeader();
-    })
-	}
-);
-
 // Smooth scrolling
 $(document).ready(function() {
 	let scrollLink = $('.scroll');
@@ -40,7 +27,7 @@ $(document).ready(function() {
 		}, 450);
 	});
 		
-	// active link
+	// Active link
 	$(window).scroll(function() {
 		let scrollbarLocation = $(this).scrollTop();
 		scrollLink.each(function() {
@@ -53,6 +40,12 @@ $(document).ready(function() {
 			}
 		})
 	})
+
+	resizeHeader();
+
+	$(window).scroll(function() {
+		resizeHeader();
+	});
 });
 
 function resizeHeader() {
