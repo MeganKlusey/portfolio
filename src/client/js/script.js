@@ -52,25 +52,25 @@ function resizeHeader() {
 	const navItems = ['about', 'work', 'contact']
 
 	if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
-		document.querySelector(`#header`).classList.add("shrunk");
-		document.querySelector(`#header`).style.transition = "0.4s";
-		document.querySelector(`#header .title-wrapper .base`).style.fontSize='55px';
-		document.querySelector(`#header .title-wrapper .gradient`).style.fontSize='55px';
-		document.querySelector(`#header .title-wrapper .base a`).style.color='#b8b8b8';
+		document.querySelector(`.header`).classList.add("shrunk");
+		document.querySelector(`.header`).style.transition = "0.4s";
+		document.querySelector(`.header .title-wrapper .base`).style.fontSize='55px';
+		document.querySelector(`.header .title-wrapper .gradient`).style.fontSize='55px';
+		document.querySelector(`.header .title-wrapper .base a`).style.color='#b8b8b8';
 		$.each(navItems, function(i, item) {
-			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .base`).style.fontSize='28px';
-			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .gradient`).style.fontSize='28px';
-			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .base a`).style.color='#b8b8b8';
+			document.querySelector(`.header .${item}-wrapper:not(.title-wrapper) .base`).style.fontSize='28px';
+			document.querySelector(`.header .${item}-wrapper:not(.title-wrapper) .gradient`).style.fontSize='28px';
+			document.querySelector(`.header .${item}-wrapper:not(.title-wrapper) .base a`).style.color='#b8b8b8';
 		})
 	} else {
-		document.querySelector(`#header`).classList.remove("shrunk");
-		document.querySelector(`#header .title-wrapper .base`).style.fontSize='120px';
-		document.querySelector(`#header .title-wrapper .gradient`).style.fontSize='120px';
-		document.querySelector(`#header .title-wrapper .base a`).style.color='transparent';
+		document.querySelector(`.header`).classList.remove("shrunk");
+		document.querySelector(`.header .title-wrapper .base`).style.fontSize='120px';
+		document.querySelector(`.header .title-wrapper .gradient`).style.fontSize='120px';
+		document.querySelector(`.header .title-wrapper .base a`).style.color='transparent';
 		$.each(navItems, function(i, item) {
-			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .base`).style.fontSize='36px';
-			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .gradient`).style.fontSize='36px';
-			document.querySelector(`#header .${item}-wrapper:not(.title-wrapper) .base a`).style.color='transparent';
+			document.querySelector(`.header .${item}-wrapper:not(.title-wrapper) .base`).style.fontSize='36px';
+			document.querySelector(`.header .${item}-wrapper:not(.title-wrapper) .gradient`).style.fontSize='36px';
+			document.querySelector(`.header .${item}-wrapper:not(.title-wrapper) .base a`).style.color='transparent';
 		})
 	}
 }
