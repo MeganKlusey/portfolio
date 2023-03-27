@@ -8,7 +8,7 @@ const Contact = (props) => {
       <div className='contact-form-wrapper'>
         <p className='contact-description'>Please get in touch using the form below.</p>
         <br/>
-        <form className='contact-form' onSubmit='submitForm();'>
+        <form className='contact-form' onSubmit={props.submitForm}>
           <input id='name' name='name' type='text' className='form-control' placeholder='Name..' required />
           <br/>
           <input id='email' name='email' type='email' className='form-control' placeholder='Email address..' required />
