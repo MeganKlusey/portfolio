@@ -1,27 +1,29 @@
-@import './views/about.scss';
-@import './views/contact.scss';
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+
 @import './views/header.scss';
 @import './views/home.scss';
+@import './views/about.scss';
 @import './views/work.scss';
+@import './views/contact.scss';
 
 *, body {
 	margin: 0;
 	padding: 0;
-
-	.main {
-		margin: 0 auto;
-		width: 80%;
-	}
 
 	p {
 		font-family: 'Cardo';
 		font-size: 24px;
 	}
 
-	#about, #work, #contact {
+	.about-container, .work-container, .contact-container{
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin: 0 auto;
 		min-height: calc(100vh - 57.5px);
+		width: 80%;
 	}
 }
