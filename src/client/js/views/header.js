@@ -1,31 +1,30 @@
 'use strict'
 
-class Header extends React.Component {
-  render() {
-    return (
-      <div class="header">
-        <div class='title-wrapper'>
-          <h1 class='base'><a class='title-btn scroll' href='#home'><div class="shine">MEGAN KLUSEY</div></a></h1>
-          <h1 class='gradient' data-text='MEGAN KLUSEY'><a class='title-btn scroll' href='#home'></a></h1>
+import React from 'react'
+
+const Header = (props) => {
+  return (
+    <div className="header">
+      <div className='title-wrapper'>
+        <h1 className='base'><a className='title-btn scroll' href='#home'><div className="shine">MEGAN KLUSEY</div></a></h1>
+        <h1 className='gradient' data-text='MEGAN KLUSEY'><a className='title-btn scroll' href='#home'></a></h1>
+      </div>
+      <nav>
+        <div className='about-wrapper'>
+          <li className='base'><a className='nav-btn scroll' href='#about'><div className="shine about">ABOUT</div></a></li>
+          <li className='gradient' data-text='ABOUT'><a className='nav-btn scroll' href='#about'></a></li>
         </div>
-        <nav>
-          <div class='about-wrapper'>
-            <li class='base'><a class='nav-btn scroll' href='#about'><div class="shine about">ABOUT</div></a></li>
-            <li class='gradient' data-text='ABOUT'><a class='nav-btn scroll' href='#about'></a></li>
-          </div>
-          <div class='work-wrapper'>
-            <li class='base'><a class='nav-btn scroll' href='#work'><div class="shine work">WORK</div></a></li>
-            <li class='gradient' data-text='WORK'><a class='nav-btn scroll' href='#work'></a></li>
-          </div>
-          <div class='contact-wrapper'>
-            <li class='base'><a class='nav-btn scroll' href='#contact'><div class="shine contact">CONTACT</div></a></li>
-            <li class='gradient' data-text='CONTACT'><a class='nav-btn scroll' href='#contact'></a></li>
-          </div>
-        </nav>
-      </div>  
-    );
-  }
+        <div className='work-wrapper'>
+          <li className='base'><a className='nav-btn scroll' href='#work'><div className="shine work">WORK</div></a></li>
+          <li className='gradient' data-text='WORK'><a className='nav-btn scroll' href='#work'></a></li>
+        </div>
+        <div className='contact-wrapper'>
+          <li className='base'><a className='nav-btn scroll' href='#contact'><div className="shine contact">CONTACT</div></a></li>
+          <li className='gradient' data-text='CONTACT'><a className='nav-btn scroll' href='#contact'></a></li>
+        </div>
+      </nav>
+    </div>  
+  );
 }
 
-let domContainer = document.querySelector('#header');
-ReactDOM.render(<Header />, domContainer);
+export default Header
