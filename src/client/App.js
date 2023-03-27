@@ -6,6 +6,9 @@ import About from '../client/js/views/about'
 import Work from '../client/js/views/work'
 import Contact from '../client/js/views/contact'
 
+import '../client/js/birds'
+import '../client/js/script'
+
 import '../client/styles/styles.scss'
 
 function App() {
