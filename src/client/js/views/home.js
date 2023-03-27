@@ -1,7 +1,6 @@
 'use strict'
 
 import React from 'react'
-import '../../js/birds'
 
 const Home = (props) => {
   return (
