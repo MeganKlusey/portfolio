@@ -23,6 +23,9 @@ const Home = (props) => {
                 dur="4s"
                 repeatCount="indefinite" />
             </linearGradient>
+            <mask id="m1">
+              <rect transform="translate(0 0)" width="100%" height="100%" fill="url(#g1)" />
+            </mask>
           </defs>
           <g mask="url(#m1)">
             <polygon fill="#b8b8b8" className='arrow-top' points='37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3'></polygon>
