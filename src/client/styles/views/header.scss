@@ -49,6 +49,7 @@
 		.gradient {
 			display: grid;
 			position: relative;
+			pointer-events: none;
 
 			&::after {
 				content: attr(data-text);

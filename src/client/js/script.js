@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
 	VANTA.BIRDS({
 		el: '.home-container',
 		color1: 0xb7e2e0,
@@ -19,27 +18,41 @@ $(document).ready(function() {
 	});
 
 	let scrollLink = $('.scroll');
+  let titleLink = $('.title-btn');
 
-	scrollLink.click(function(e) {
-		e.preventDefault();
-		$('html, body').animate({
-			scrollTop: $(this.hash).offset().top
-		}, 450);
-	});
+  scrollLink.click(function(e) {
+    e.preventDefault();
+    let target = $(this).attr('href');
 		
-	// Active link
-	// $(window).scroll(function() {
-	// 	let scrollbarLocation = $(this).scrollTop();
-	// 	scrollLink.each(function() {
-	// 		let divOffset = $(this.hash).offset().top - 200;
-	// 		if(divOffset <= scrollbarLocation) {
-	// 			$(this).parent().addClass('active');
-	// 			$(this).parent().siblings().removeClass('active');
-	// 		} else {
-	// 			$(this).parent().removeClass('active');
-	// 		}
-	// 	})
-	// })
+    if ($(target).length) {
+      $('html, body').animate({
+        scrollTop: $(target).offset().top
+      }, 450);
+    }
+  });
+
+  titleLink.click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, 450);
+  });
+
+	$(window).scroll(function () {
+		let scrollbarLocation = $(this).scrollTop();
+		scrollLink.each(function () {
+			let target = $(this.hash);
+			if (target.length) {
+				let divOffset = target.offset().top - 200;
+				if (divOffset <= scrollbarLocation) {
+					$(this).parent().addClass('active');
+					$(this).parent().siblings().removeClass('active');
+				} else {
+					$(this).parent().removeClass('active');
+				}
+			}
+		});
+	});
 
 	resizeHeader();
 
