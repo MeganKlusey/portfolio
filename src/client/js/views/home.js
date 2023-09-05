@@ -4,7 +4,7 @@ import React from 'react'
 
 const Home = (props) => {
   return (
-    <a className='home-container scroll' href='#about'>
+    <a className='home-container scroll' id="home" href='#about'>
       <div className='more-arrows-wrapper'>
         <svg className='base more-arrows' width="75" viewBox="0 0 75 65" fill="url(#g1)">
           <defs>

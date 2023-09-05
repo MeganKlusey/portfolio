@@ -31,13 +31,6 @@ $(document).ready(function() {
     }
   });
 
-  titleLink.click(function(e) {
-    e.preventDefault();
-    $('html, body').animate({
-      scrollTop: 0
-    }, 450);
-  });
-
 	$(window).scroll(function () {
 		let scrollbarLocation = $(this).scrollTop();
 		scrollLink.each(function () {
