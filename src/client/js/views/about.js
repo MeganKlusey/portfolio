@@ -4,7 +4,7 @@ import React from 'react'
 
 const About = (props) => {
   return (
-    <div className='about-container'>
+    <div className='about-container' id="about">
       <p className='aboutText'>
         I'm a web developer, and passionate about it as it provides the opportunity to combine the 
         analytic with the creative. With a degree in Business Management and Computer Science from Oxford Brookes University,

@@ -4,7 +4,7 @@ import React from 'react'
 
 const Contact = (props) => {
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       <div className='contact-form-wrapper'>
         <p className='contact-description'>Feel free to get in touch!</p>
         <br/>

@@ -4,7 +4,7 @@ import React from 'react'
 
 const Work = (props) => {
   return (
-    <div className='work-container'>
+    <div className='work-container' id="work">
       <div className='thumbnails-container'>
         <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <div className='box'>
