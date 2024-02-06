@@ -2,6 +2,7 @@
 	display: flex;
 	flex-wrap: wrap;
   gap: 10px;
+	min-height: 100vh;
 
 	.thumbnails-container {
 		display: flex;
@@ -9,7 +10,7 @@
 		gap: 10px;
 
 		.thumbnail-container {
-			border: 1px solid #000;
+			border: 1px solid #212221;
 			cursor: pointer;
 			display: flex;
 			position: relative;
