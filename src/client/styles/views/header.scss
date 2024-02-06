@@ -6,18 +6,16 @@
 	font-family: 'Oswald', sans-serif;
   height: auto;
   justify-content: center;
-  padding-bottom: 15px;
   position: fixed;
   width: 100%;
-	top: 50%;
-	transform: translateY(-70%);
+	top: 28%;
   z-index: 2;
 
 	&.shrunk {
 		background-color: #fff;
 		top: 0%;
-		transform: translateY(0%);
 		transition: top 0.2s ease, transform 0.2s ease;
+		height: 100px;
 	}
 
 	.title-wrapper, .about-wrapper, .work-wrapper, .contact-wrapper {
@@ -86,14 +84,15 @@
 		width: 100%;
 		z-index: 1;
 	
-		li a {
-			color: #898989;
-	
-			&:hover, &.active {
-				text-decoration: underline;
-				text-decoration-color: #d4af37;
-				transition: 0s;
-				-webkit-text-decoration-color: #d4af37;
+		li {
+			a.active {
+				color: #003478 !important;
+			}
+			
+			&:hover {
+				a {
+					color: #003478 !important;
+				}
 			}
 		}
 	}
@@ -102,6 +101,7 @@
 .shine {
 	background: #b8b8b8 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
 	background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+	overflow: hidden;
 	-webkit-background-size: 200%;
 	-webkit-background-clip: text;
 	-webkit-animation-name: shine;
