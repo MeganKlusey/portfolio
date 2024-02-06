@@ -5,7 +5,7 @@ import React from 'react'
 const Home = (props) => {
   return (
     <section className='home-container' id="home">
-      <a className='scroll' href="#about">
+      <a className='scroll' href="#about" data-aos="fade-down" data-aos-delay="250">
         <div className='more-arrows-wrapper'>
           <svg className='base more-arrows' width="75" viewBox="0 0 75 65" fill="url(#g1)">
             <defs>
