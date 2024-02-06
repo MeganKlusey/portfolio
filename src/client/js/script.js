@@ -16,38 +16,42 @@ $(document).ready(function() {
 		wingSpan: 40.00,
 		quantity: 2.00
 	});
-
+	
 	let scrollLink = $('.scroll');
-  let titleLink = $('.title-btn');
+	let activeSection = null;
 
-  scrollLink.click(function(e) {
-    e.preventDefault();
-    let target = $(this).attr('href');
-		
-    if ($(target).length) {
-      $('html, body').animate({
-        scrollTop: $(target).offset().top
-      }, 450);
-    }
-  });
+	scrollLink.click(function(e) {
+		e.preventDefault();
+		let target = $(this).attr('href');
+		scrollToTarget(target);
+	});
 
-	$(window).scroll(function () {
-		let scrollbarLocation = $(this).scrollTop();
-		scrollLink.each(function () {
-			let target = $(this.hash);
-			if (target.length) {
-				let divOffset = target.offset().top - 200;
-				if (divOffset <= scrollbarLocation) {
-					$(this).parent().addClass('active');
-					$(this).parent().siblings().removeClass('active');
-				} else {
-					$(this).parent().removeClass('active');
-				}
+	function scrollToTarget(target) {
+		$('html, body').animate({
+			scrollTop: $(target).offset().top
+		}, 450);
+	}
+
+	const sections = document.querySelectorAll("section");
+	const navItem = document.querySelectorAll(".header-btn");
+
+	$(window).scroll(function() {
+		var current = "";
+
+		sections.forEach((section) => {
+			const sectionTop = section.offsetTop;
+			if (pageYOffset >= sectionTop - 100) {
+				current = section.getAttribute("id");
+			}
+		});
+
+		navItem.forEach((item) => {
+			item.classList.remove("active");
+			if (item.classList.contains(current)) {
+				item.classList.add("active");
 			}
 		});
 	});
-
-	resizeHeader();
 
 	$(window).scroll(function() {
 		resizeHeader();
@@ -79,6 +83,8 @@ $(document).ready(function() {
 			})
 		}
 	}
+
+	resizeHeader();
 	
 	function submitForm() {
 		document.getElementById('submit').disabled = true;
