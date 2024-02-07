@@ -18,7 +18,6 @@ $(document).ready(function() {
 	});
 	
 	let scrollLink = $('.scroll');
-	let activeSection = null;
 
 	scrollLink.click(function(e) {
 		e.preventDefault();
@@ -60,18 +59,19 @@ $(document).ready(function() {
 	function resizeHeader() {
 		const navItems = ['about', 'work', 'contact']
 	
-		if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
-			document.querySelector(`.header-container`).classList.add("shrunk");
-			document.querySelector(`.header-container`).style.transition = "0.4s";
-			document.querySelector(`.header-container .title-wrapper .base`).style.fontSize='55px';
-			document.querySelector(`.header-container .title-wrapper .gradient`).style.fontSize='55px';
-			document.querySelector(`.header-container .title-wrapper .base a`).style.color='#b8b8b8';
-			$.each(navItems, function(i, item) {
-				document.querySelector(`.header-container .${item}-wrapper:not(.title-wrapper) .base`).style.fontSize='28px';
-				document.querySelector(`.header-container .${item}-wrapper:not(.title-wrapper) .gradient`).style.fontSize='28px';
-				document.querySelector(`.header-container .${item}-wrapper:not(.title-wrapper) .base a`).style.color='#b8b8b8';
-			})
-		} else {
+		if ($(window).width() > 676) {
+			if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+				document.querySelector(`.header-container`).classList.add("shrunk");
+				document.querySelector(`.header-container`).style.transition = "0.4s";
+				document.querySelector(`.header-container .title-wrapper .base`).style.fontSize='55px';
+				document.querySelector(`.header-container .title-wrapper .gradient`).style.fontSize='55px';
+				document.querySelector(`.header-container .title-wrapper .base a`).style.color='#b8b8b8';
+				$.each(navItems, function(i, item) {
+					document.querySelector(`.header-container .${item}-wrapper:not(.title-wrapper) .base`).style.fontSize='28px';
+					document.querySelector(`.header-container .${item}-wrapper:not(.title-wrapper) .gradient`).style.fontSize='28px';
+					document.querySelector(`.header-container .${item}-wrapper:not(.title-wrapper) .base a`).style.color='#b8b8b8';
+				})
+			} else {
 			document.querySelector(`.header-container`).classList.remove("shrunk");
 			document.querySelector(`.header-container .title-wrapper .base`).style.fontSize='120px';
 			document.querySelector(`.header-container .title-wrapper .gradient`).style.fontSize='120px';
@@ -81,6 +81,30 @@ $(document).ready(function() {
 				document.querySelector(`.header-container .${item}-wrapper:not(.title-wrapper) .gradient`).style.fontSize='36px';
 				document.querySelector(`.header-container .${item}-wrapper:not(.title-wrapper) .base a`).style.color='transparent';
 			})
+		}
+		} else if ($(window).width() <= 676) {
+			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+				document.querySelector(`.header-container`).classList.add("shrunk");
+				document.querySelector(`.header-container`).style.transition = "0.4s";
+				document.querySelector(`.header-container .title-wrapper .base`).style.fontSize='55px';
+				document.querySelector(`.header-container .title-wrapper .gradient`).style.fontSize='55px';
+				document.querySelector(`.header-container .title-wrapper .base a`).style.color='#b8b8b8';
+				$.each(navItems, function(i, item) {
+					document.querySelector(`.header-container .${item}-wrapper:not(.title-wrapper) .base`).style.fontSize='28px';
+					document.querySelector(`.header-container .${item}-wrapper:not(.title-wrapper) .gradient`).style.fontSize='28px';
+					document.querySelector(`.header-container .${item}-wrapper:not(.title-wrapper) .base a`).style.color='#b8b8b8';
+				})
+			} else {
+				document.querySelector(`.header-container`).classList.remove("shrunk");
+				document.querySelector(`.header-container .title-wrapper .base`).style.fontSize='120px';
+				document.querySelector(`.header-container .title-wrapper .gradient`).style.fontSize='120px';
+				document.querySelector(`.header-container .title-wrapper .base a`).style.color='transparent';
+				$.each(navItems, function(i, item) {
+					document.querySelector(`.header-container .${item}-wrapper:not(.title-wrapper) .base`).style.fontSize='36px';
+					document.querySelector(`.header-container .${item}-wrapper:not(.title-wrapper) .gradient`).style.fontSize='36px';
+					document.querySelector(`.header-container .${item}-wrapper:not(.title-wrapper) .base a`).style.color='transparent';
+				})
+			}
 		}
 	}
 
