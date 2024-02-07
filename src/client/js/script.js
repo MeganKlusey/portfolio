@@ -1,4 +1,6 @@
 window.onload = function() {
+	AOS.init();
+	
 	VANTA.BIRDS({
 		el: '.home-container',
 		color1: 0xb7e2e0,
