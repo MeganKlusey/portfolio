@@ -1,4 +1,4 @@
-$(document).ready(function() {
+window.onload = function() {
 	VANTA.BIRDS({
 		el: '.home-container',
 		color1: 0xb7e2e0,
@@ -134,4 +134,4 @@ $(document).ready(function() {
 		};
 		ajax.send(formData);
 	}
-});
+};
