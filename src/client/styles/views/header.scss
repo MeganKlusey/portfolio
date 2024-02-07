@@ -1,10 +1,8 @@
 .header-container {
   align-items: center;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 	font-family: 'Oswald', sans-serif;
-  height: auto;
   justify-content: center;
   position: fixed;
   width: 100%;
@@ -49,8 +47,7 @@
 		.base {
 			position: absolute;
 		}
-	
-		.gradient {
+			.gradient {
 			display: grid;
 			position: relative;
 			pointer-events: none;
@@ -77,14 +74,12 @@
 					font-size: 24px;
 				}
 			}
-			
 		}
 	}
 	
 	nav {
 		align-items: center;
 		display: flex;
-		flex-direction: row;
 		justify-content: space-around;
 		list-style: none;
 		position: relative;
@@ -133,8 +128,7 @@
 @-webkit-keyframes shine {
 	0% {
 		background-position: 150%
-	}
-	100% {
+	} 100% {
 		background-position: -50%
 	}
 }
@@ -142,8 +136,7 @@
 @-webkit-keyframes shineAbout {
 	0% {
 		background-position: 340%
-	}
-	100% {
+	} 100% {
 		background-position: -410%
 	}
 }
@@ -151,8 +144,7 @@
 @-webkit-keyframes shineWork {
 	0% {
 		background-position: 380%
-	}
-	100% {
+	} 100% {
 		background-position: -200%
 	}
 }
@@ -160,8 +152,7 @@
 @-webkit-keyframes shineContact {
 	0% {
 		background-position: 470%
-	}
-	100% {
+	} 100% {
 		background-position: -100%
 	}
 }
