@@ -47,7 +47,8 @@
 		.base {
 			position: absolute;
 		}
-			.gradient {
+
+		.gradient {
 			display: grid;
 			position: relative;
 			pointer-events: none;
@@ -70,6 +71,11 @@
 				font-size: 36px;
 				transition: 0.25s;
 
+				&:hover:not(:has(> a.active)) {
+					opacity: 0.6;
+					transition: none !important;
+				}
+
 				@media only screen and (max-width: 425px) {
 					font-size: 24px;
 				}
@@ -87,14 +93,13 @@
 		z-index: 1;
 	
 		li {
-			a.active {
-				color: #003478 !important;
-			}
-			
-			&:hover {
-				a {
+			a {
+				&.active {
 					color: #003478 !important;
-					opacity: 0.6;
+				}
+
+				&:hover {
+					color: #003478 !important;
 				}
 			}
 		}
