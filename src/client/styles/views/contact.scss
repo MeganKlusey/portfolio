@@ -38,6 +38,7 @@ $xl: 1280px;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
+		gap: 15px;
 		width: 55%;
 
 		@media only screen and (max-width: $lg) {
@@ -58,8 +59,9 @@ $xl: 1280px;
 		}
 
 		.contact-form {
+			display: flex;
+			flex-direction: column;
 			font-family: 'Cardo';
-			transform: translateX(0%) translateY(14%);
 			transition: all 1s ease-in-out;
 
 			.form-control {
@@ -69,7 +71,6 @@ $xl: 1280px;
 				color: #212221;
 				font-family: 'Cardo';
 				font-size: 18px;
-				margin-bottom: 16px;
 				outline: none;
 				width: 100%;
 
