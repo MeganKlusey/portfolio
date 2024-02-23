@@ -2,31 +2,21 @@
 	display: flex;
 	flex-wrap: wrap;
   gap: 10px;
-	min-height: 100vh;
 
 	.thumbnails-container {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 10px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+
+		@media only screen and (max-width: $sm) {
+			grid-template-columns: 1fr;
+		}
 
 		.thumbnail-container {
 			border: 1px solid #212221;
 			cursor: pointer;
 			display: flex;
 			position: relative;
-			width: calc(25% - 10px);
-		
-			@media only screen and (max-width: $xl) {
-				width: calc((100% / 3) - 10px);
-			}
-		
-			@media only screen and (max-width: $lg) {
-				width: calc(50% - 10px);
-			}
-		
-			@media only screen and (max-width: $sm) {
-				width: calc(100% - 10px);
-			}
 		
 			.box {
 				flex: 1;
