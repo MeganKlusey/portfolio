@@ -25,5 +25,9 @@ $xl: 1280px;
 		margin: 0 auto;
 		min-height: calc(100vh - 100px);
 		width: 80%;
+
+		&:not(.contact-container) > div {
+			padding: 50px 0;
+		}
 	}
 }
