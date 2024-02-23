@@ -6,7 +6,7 @@ const Work = (props) => {
   return (
     <section className='work-container' id="work">
       <div className='thumbnails-container'>
-        <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div className='box'>
             <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'>
               <line className='top' x1='-920' y1='0' x2='460' y2='0'/>
@@ -17,7 +17,7 @@ const Work = (props) => {
             </svg>
           </div>
         </div>
-        <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100">
+        <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100">
           <div className='box'>
             <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'>
               <line className='top' x1='-920' y1='0' x2='460' y2='0'/>
@@ -28,7 +28,7 @@ const Work = (props) => {
             </svg>
           </div>
         </div>
-        <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">
+        <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="200">
           <div className='box'>
             <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'>
               <line className='top' x1='-920' y1='0' x2='460' y2='0'/>
@@ -39,7 +39,7 @@ const Work = (props) => {
             </svg>
           </div>
         </div>
-        <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
+        <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300">
           <div className='box'>
             <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'>
               <line className='top' x1='-920' y1='0' x2='460' y2='0'/>
