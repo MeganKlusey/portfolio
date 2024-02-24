@@ -18,7 +18,7 @@ const Contact = (props) => {
           <br/>
           <textarea id='message' name='message' className='form-control' placeholder='your message' required data-aos="fade-right"></textarea>
           <br/>
-          <input id='submit' type='submit' className='form-control submit shine' value='SEND' data-aos="zoom-out" data-aos-anchor-placement="center-bottom" />
+          <input id='submit' type='submit' className='form-control submit' value='SEND' data-aos="zoom-out" data-aos-anchor-placement="center-bottom" />
           <br/>
           <span id='status'></span>
         </form>
