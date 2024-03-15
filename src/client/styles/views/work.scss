@@ -4,13 +4,11 @@
   gap: 10px;
 
 	.thumbnails-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		column-count: 3;
 		grid-gap: 20px;
-
-		@media only screen and (max-width: $sm) {
-			grid-template-columns: 1fr;
-		}
 
 		.thumbnail-container {
 			border: 1px solid #212221;
