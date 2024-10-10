@@ -7,8 +7,7 @@
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
-		column-count: 3;
-		grid-gap: 20px;
+		gap: 20px;
 
 		.thumbnail-container {
 			border: 1px solid #212221;
