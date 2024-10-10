@@ -6,22 +6,8 @@ const Contact = (props) => {
   return (
     <section className="contact-container" id="contact">
       <div className='contact-form-wrapper'>
-        <p className='contact-description' data-aos="zoom-in">Please get in touch by e&#8209;mailing<br/> 
-         <a href="mailto:megan.klusey@hotmail.co.uk">megan.klusey@hotmail.co.uk</a> <br/> or by 
-         using the form below:</p>
-        <form className='contact-form' onSubmit={props.submitForm}>
-          <input id='name' name='name' type='text' className='form-control' placeholder='your full name' required data-aos="fade-right" />
-          <br/>
-          <input id='email' name='email' type='email' className='form-control' placeholder='your email address' required data-aos="fade-right" />
-          <br/>
-          <input id='subject' name='subject' type='text' className='form-control' placeholder='subject' required data-aos="fade-right" />
-          <br/>
-          <textarea id='message' name='message' className='form-control' placeholder='your message' required data-aos="fade-right"></textarea>
-          <br/>
-          <input id='submit' type='submit' className='form-control submit' value='SEND' data-aos="zoom-out" data-aos-anchor-placement="center-bottom" />
-          <br/>
-          <span id='status'></span>
-        </form>
+        <p className='contact-description' data-aos="zoom-in">Please get in touch by e&#8209;mailing me at<br/> 
+         <a href="mailto:megan.klusey@hotmail.co.uk">megan.klusey@hotmail.co.uk</a></p>
       </div>
     </section> 
   )
