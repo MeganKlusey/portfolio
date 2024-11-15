@@ -15,10 +15,40 @@
 			position: relative;
 
 			.thumbnail-wrapper {
-				flex: 1;
 				height: 0;
 				position: relative;
 				padding-bottom: 56.25%;
+				overflow: hidden;
+
+				&:hover {
+					.thumbnail-overlay {
+						display: flex;
+						transform: translateY(0%);
+
+						&.slide-up {
+							animation: slide-up 0.25s linear;
+						}
+					}
+				}
+
+				.thumbnail-overlay {
+					background-color: rgba(#b7e2e0, 0.4);
+					display: none;
+					justify-content: center;
+					padding-bottom: 56.25%;
+					width: 100%;
+
+					a {
+						bottom: 0;
+						color: #003478;
+						text-transform: uppercase;
+						margin: 0 auto;
+						text-align: center;
+						text-decoration: none;
+						position: absolute;
+						margin-top: auto;
+					}
+				}
 
 				.thumbnail {
 					width: 300px;
@@ -59,5 +89,13 @@
 			-ms-transform: translate(-50%, -50%);
 			overflow: hidden;
 		}
+	}
+}
+
+@keyframes slide-up {
+	from {
+		transform: translateY(100%);
+	} to {
+		transform: translateY(0%);
 	}
 }
