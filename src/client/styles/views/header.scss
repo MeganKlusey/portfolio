@@ -94,11 +94,7 @@
 	
 		li {
 			a {
-				&.active {
-					color: #003478 !important;
-				}
-
-				&:hover {
+				&:hover, &.active {
 					color: #003478 !important;
 				}
 			}
