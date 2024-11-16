@@ -33,7 +33,7 @@ const Work = (props) => {
                 </a>
               </div>
             </div>
-            <img src='' className='thumbnail' alt=''/>
+            <img src='src/client/js/img/the-10-vinyls.png' className='thumbnail' alt='The 10 Vinyls thumbnail'/>
           </div>
         </div>
         <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100">
