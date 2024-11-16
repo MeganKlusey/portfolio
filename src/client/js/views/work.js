@@ -18,7 +18,7 @@ const Work = (props) => {
                 </a>
               </div>
             </div>
-            <img src='' className='thumbnail' alt=''/>
+            <img src='src/client/js/img/mymedium.png' className='thumbnail' alt='My Medium thumbnail'/>
           </div>
         </div>
         <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="50">
