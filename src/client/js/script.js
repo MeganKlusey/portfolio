@@ -35,13 +35,16 @@ window.onload = function() {
 
 	const sections = document.querySelectorAll("section");
 	const navItem = document.querySelectorAll(".header-btn");
+	var current = "";
 
 	$(window).scroll(function() {
-		var current = "";
+		activeNav();
+	});
 
+	function activeNav() {
 		sections.forEach((section) => {
 			const sectionTop = section.offsetTop;
-			if (pageYOffset >= sectionTop - 100) {
+			if (scrollY >= sectionTop - 100) {
 				current = section.getAttribute("id");
 			}
 		});
@@ -52,7 +55,9 @@ window.onload = function() {
 				item.classList.add("active");
 			}
 		});
-	});
+	}
+
+	activeNav();
 
 	$(window).scroll(function() {
 		resizeHeader();
