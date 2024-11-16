@@ -7,25 +7,46 @@ const Work = (props) => {
     <section className='work-container' id="work">
       <div className='thumbnails-container'>
         <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-          <div class="thumbnail-wrapper">
+          <div className="thumbnail-wrapper">
             <div className='thumbnail-overlay'>
-              <a href="">View project</a>
+              <div className='overlay-content'>
+                <a href="" className='view-project'>
+                  <p>View project</p>
+                  <div className="chevron-forward">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </div>
+                </a>
+              </div>
             </div>
             <img src='' className='thumbnail' alt=''/>
           </div>
         </div>
         <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="50">
-          <div class="thumbnail-wrapper">
+          <div className="thumbnail-wrapper">
             <div className='thumbnail-overlay'>
-              <a href="">View project</a>
+              <div className='overlay-content'>
+                <a href="" className='view-project'>
+                  <p>View project</p>
+                  <div className="chevron-forward">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </div>
+                </a>
+              </div>
             </div>
             <img src='' className='thumbnail' alt=''/>
           </div>
         </div>
         <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100">
-          <div class="thumbnail-wrapper">
+          <div className="thumbnail-wrapper">
             <div className='thumbnail-overlay'>
-              <a href="">View project</a>
+              <div className='overlay-content'>
+                <a href="" className='view-project'>
+                  <p>View project</p>
+                  <div className="chevron-forward">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </div>
+                </a>
+              </div>
             </div>
             <img src='' className='thumbnail' alt=''/>
           </div>

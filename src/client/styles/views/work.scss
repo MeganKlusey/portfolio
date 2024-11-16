@@ -38,15 +38,40 @@
 						transform: translateY(100%);
 					}
 
-					a {
-						bottom: 0;
-						color: #003478;
-						text-transform: uppercase;
-						margin: 0 auto;
-						text-align: center;
-						text-decoration: none;
+					.overlay-content {
+						display: flex;
+						padding: 10px;
 						position: absolute;
-						margin-top: auto;
+						height: calc(100% - 20px);
+						width: calc(100% - 20px);
+
+						.view-project {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							gap: 5px;
+							margin: auto;
+							margin-bottom: 0;
+							text-decoration: none;
+							
+							&:hover {
+								opacity: 60%;
+							}
+
+							p {
+								color: #003478;
+								font-family: 'Oswald', sans-serif;;
+								font-size: 16px;
+								text-transform: uppercase;
+								position: relative;
+							}
+
+							.chevron-forward {
+								display: flex;
+								color: #003478;
+								font-family: 'Oswald', sans-serif;;
+							}
+						}
 					}
 				}
 
