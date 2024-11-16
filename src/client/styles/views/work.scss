@@ -19,9 +19,10 @@
 				position: relative;
 				padding-bottom: 56.25%;
 				overflow: hidden;
+				width: 300px;
 
 				.thumbnail-overlay {
-					background-color: rgba(#b7e2e0, 0.4);
+					background-color: #E3F3F2;
 					display: flex;
 					justify-content: center;
 					padding-bottom: 56.25%;
@@ -76,8 +77,11 @@
 				}
 
 				.thumbnail {
+					position: absolute;
+					top: 0;
 					width: 300px;
-					height: 56.25%;
+					height: 100%;
+					z-index: -1;
 				}
 			}
 		}
