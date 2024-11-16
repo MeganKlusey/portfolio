@@ -48,7 +48,7 @@ const Work = (props) => {
                 </a>
               </div>
             </div>
-            <img src='' className='thumbnail' alt=''/>
+            <img src='src/client/js/img/hello-world-bye-world.png' className='thumbnail cover' alt='Hello World Bye World thumbnail'/>
           </div>
         </div>
       </div>
