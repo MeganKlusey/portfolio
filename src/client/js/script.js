@@ -109,6 +109,14 @@ window.onload = function() {
 	}
 
 	resizeHeader();
+
+	$('.thumbnail-wrapper').mouseenter(function() {
+		$(this).children('.thumbnail-overlay').removeClass('slide-down').addClass('slide-up')
+	})
+
+	$('.thumbnail-wrapper').mouseleave(function() {
+		$(this).children('.thumbnail-overlay').removeClass('slide-up').addClass('slide-down')
+	})
 	
 	function submitForm() {
 		document.getElementById('submit').disabled = true;

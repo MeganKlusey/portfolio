@@ -20,23 +20,23 @@
 				padding-bottom: 56.25%;
 				overflow: hidden;
 
-				&:hover {
-					.thumbnail-overlay {
-						display: flex;
-						transform: translateY(0%);
-
-						&.slide-up {
-							animation: slide-up 0.25s linear;
-						}
-					}
-				}
-
 				.thumbnail-overlay {
 					background-color: rgba(#b7e2e0, 0.4);
-					display: none;
+					display: flex;
 					justify-content: center;
 					padding-bottom: 56.25%;
+					transform: translateY(100%);
 					width: 100%;
+
+					&.slide-up {
+						animation: slide-up 0.25s linear;
+						transform: translateY(0%);
+					}
+
+					&.slide-down {
+						animation: slide-down 0.125s linear;
+						transform: translateY(100%);
+					}
 
 					a {
 						bottom: 0;
@@ -97,5 +97,13 @@
 		transform: translateY(100%);
 	} to {
 		transform: translateY(0%);
+	}
+}
+
+@keyframes slide-down {
+	from {
+		transform: translateY(0%);
+	} to {
+		transform: translateY(100%);
 	}
 }
