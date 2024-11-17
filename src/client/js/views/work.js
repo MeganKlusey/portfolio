@@ -48,6 +48,10 @@ const Work = (props) => {
           <div className="thumbnail-wrapper">
             <div className='thumbnail-overlay'>
               <div className='overlay-content'>
+                <div className='project-info'>
+                  <h4>Hello World / Bye World</h4>
+                  <p><span className='list-title'>Tech Stack:</span>&nbsp;<span className='list'>GSAP, SVG, Sass, JavaScript</span></p>
+                </div>
                 <a href="" className='view-project'>
                   <p>View project</p>
                   <div className="chevron-forward">
