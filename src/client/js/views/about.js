@@ -8,10 +8,10 @@ const About = (props) => {
       <div>
         <p className='aboutText' data-aos-anchor-placement="top-center" data-aos="zoom-in" data-aos-duration="300">
           I'm a front end developer, and passionate about it as it provides the opportunity to combine the 
-          analytic with the creative. With a degree in Business Management and Computer Science from Oxford Brookes University,
+          analytic with the creative. With a degree in Business Management with Computer Science,
           I am now looking for a role in front-end development to take my skills to the next level. My knowledge of languages include:
           <br/><br/>
-          HTML, CSS, JavaScript, jQuery, React, PHP, Java, Python, XML and SVG.
+          HTML, CSS, JavaScript, jQuery, React, Vue, PHP.
           <br/><br/>
           In addition to this, I have experience using WordPress
           and proficient in Microsoft Office software. Digital marketing
