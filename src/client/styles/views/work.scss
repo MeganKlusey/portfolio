@@ -41,10 +41,36 @@
 
 					.overlay-content {
 						display: flex;
+						flex-direction: column;
+						align-items: center;
 						padding: 10px;
 						position: absolute;
 						height: calc(100% - 20px);
 						width: calc(100% - 20px);
+
+						.project-info {
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							gap: 20px;
+
+							.h4 {
+								font-size: 20px;
+							}
+
+							p {
+								display: flex;
+								align-items: baseline;
+								font-size: 14px;
+								text-transform: uppercase;
+
+								.list-title {
+									font-family: 'Oswald', sans-serif;
+									font-weight: 800;
+									white-space: nowrap;
+								}
+							}
+						}
 
 						.view-project {
 							display: flex;
@@ -61,7 +87,7 @@
 
 							p {
 								color: #003478;
-								font-family: 'Oswald', sans-serif;;
+								font-family: 'Oswald', sans-serif;
 								font-size: 16px;
 								text-transform: uppercase;
 								position: relative;
