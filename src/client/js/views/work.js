@@ -12,9 +12,9 @@ const Work = (props) => {
               <div className='overlay-content'>
                 <div className='project-info'>
                   <h4>myMedium</h4>
-                  <p><span className='list-title'>Tech Stack:</span>&nbsp;<span className='list'>React, Tailwind, jQuery, REST API</span></p>
+                  <p><span className='list-title'>Tech Stack:</span>&nbsp;<span className='list'>React, Node.js, Tailwind, jQuery, REST API</span></p>
                 </div>
-                <a href="" className='view-project'>
+                <a href="https://meganklusey.github.io/mymedium/" className='view-project' target='_blank'>
                   <p>View project</p>
                   <div className="chevron-forward">
                     <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -31,7 +31,7 @@ const Work = (props) => {
               <div className='overlay-content'>
                 <div className='project-info'>
                   <h4>The 10 Vinyls</h4>
-                  <p><span className='list-title'>Tech Stack:</span>&nbsp;<span className='list'>Vue, Sass, JavaScript</span></p>
+                  <p><span className='list-title'>Tech Stack:</span>&nbsp;<span className='list'>Vue, SCSS, JavaScript</span></p>
                 </div>
                 <a href="" className='view-project'>
                   <p>View project</p>
@@ -50,7 +50,7 @@ const Work = (props) => {
               <div className='overlay-content'>
                 <div className='project-info'>
                   <h4>Hello World / Bye World</h4>
-                  <p><span className='list-title'>Tech Stack:</span>&nbsp;<span className='list'>GSAP, SVG, Sass, JavaScript</span></p>
+                  <p><span className='list-title'>Tech Stack:</span>&nbsp;<span className='list'>GSAP, SVG, SCSS, JavaScript</span></p>
                 </div>
                 <a href="" className='view-project'>
                   <p>View project</p>
