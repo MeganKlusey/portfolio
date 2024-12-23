@@ -22,7 +22,7 @@
 				width: 300px;
 
 				.thumbnail-overlay {
-					background-color: #E8F4F3;
+					background: linear-gradient(to top right, #c0d1f3, #E8F4F3,);
 					display: flex;
 					justify-content: center;
 					padding-bottom: 56.25%;
@@ -166,5 +166,13 @@
 		transform: translateY(0%);
 	} to {
 		transform: translateY(100%);
+	}
+}
+
+@keyframes shine {
+	0% {
+		background-position: 120%
+	} 100% {
+		background-position: -50%
 	}
 }
