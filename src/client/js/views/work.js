@@ -33,7 +33,7 @@ const Work = (props) => {
                   <h4>The 10 Vinyls</h4>
                   <p><span className='list-title'>Tech Stack:</span>&nbsp;<span className='list'>Vue, SCSS, JavaScript</span></p>
                 </div>
-                <a href="https://meganklusey.github.io/the-10-vinyls/" className='view-project'>
+                <a href="https://meganklusey.github.io/the-10-vinyls/" className='view-project' target="_blank">
                   <p>View project</p>
                   <div className="chevron-forward">
                     <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -52,7 +52,7 @@ const Work = (props) => {
                   <h4>Hello World / Bye World</h4>
                   <p><span className='list-title'>Tech Stack:</span>&nbsp;<span className='list'>GSAP, SVG, SCSS, JavaScript</span></p>
                 </div>
-                <a href="https://codepen.io/Megan-K/pen/vEBBKxg" className='view-project'>
+                <a href="https://codepen.io/Megan-K/pen/vEBBKxg" className='view-project' target="_blank">
                   <p>View project</p>
                   <div className="chevron-forward">
                     <ion-icon name="chevron-forward-outline"></ion-icon>
