@@ -7,16 +7,20 @@ const About = (props) => {
     <section className='about-container' id="about">
       <div>
         <p className='aboutText' data-aos-anchor-placement="top-center" data-aos="zoom-in" data-aos-duration="300">
-          I'm a front end developer, and my passion stems from the opportunities to 
-          blend creativity with problem-solving harmoniously.
+          <strong>My passion for front end development stems from the opportunity to 
+          blend problem-solving with creativity harmoniously.</strong>
           <br/><br/>
-          With nearly four years of proven commercial experience, complemented with a first-class 
-          Honours degree in the computing field, I am eager to propel my career to new heights. 
-          My journey so far has equipped me with a diverse skill set and
-          a commitment to continuous learning.
+          From sleek aesthetics and seemless functionality, I believe that 
+          users world-wide deserve to have a satisfying experience, and this drives me 
+          towards optimisation. I am eager to continue growing and propel 
+          my career to new heights.
           <br/><br/>
-          Building websites and apps that provide a satisfying experience for users 
-          world-wide drives me.
+          With nearly four years of proven commercial experience and a first-class 
+          Honours degree in the computing field, my journey so far has equipped me with a 
+          diverse skill set, including technologies like <strong>React</strong>,&nbsp;
+          <strong>Vue</strong>, <strong>TypeScript</strong>,&nbsp;
+          <strong>Node.js</strong>, <strong>HTML</strong>, <strong>SCSS</strong>,
+          and <strong>Tailwind</strong>, showcased in my projects below.
         </p>
       </div>
     </section>
