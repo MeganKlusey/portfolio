@@ -29,7 +29,7 @@ window.onload = function() {
 
 	function scrollToTarget(target) {
 		$('html, body').animate({
-			scrollTop: $(target).offset().top - 100
+			scrollTop: $(target).offset().top - 99
 		}, 450);
 	}
 
@@ -127,11 +127,11 @@ window.onload = function() {
 		document.getElementById('submit').disabled = true;
 		document.getElementById('status').innerHTML = 'Please wait...';
 		document.getElementById('name').value = document.getElementById('name').value.replace(/\s*$/,"");
-		let formData = new FormData();
 		formData.append('name', document.getElementById('name').value);
 		formData.append('email', document.getElementById('email').value);
-		formData.append('subject', document.getElementById('subject').value);
 		formData.append('message', document.getElementById('message').value);
+		
+		let formData = new FormData();
 		let ajax = new XMLHttpRequest();
 		ajax.open('POST', 'contact-form.php');
 		ajax.onreadystatechange = function() {
@@ -141,7 +141,7 @@ window.onload = function() {
 					+document.getElementById('name').value +', your message has been sent.</h2>';
 				} else {
 					document.getElementById('status').innerHTML = `<h2>Sorry, there was a problem 
-				sending your message. Please try again."</h2>`
+					sending your message. Please try again."</h2>`
 					console.log(ajax.responseText);
 					document.getElementById('submit').disabled = false;
 				}
