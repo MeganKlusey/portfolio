@@ -4,6 +4,10 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 module.exports = {
   entry: './src/client/index.js',
   mode: 'production',
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist')
+  },
   module: {
     rules: [
       {
@@ -18,14 +22,15 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        type: 'asset/resource'
       },
     ]
   },
   plugins: [
       new HtmlWebPackPlugin({
         template: './src/client/views/index.html',
-        filename: './index.html'
+        filename: './index.html',
+        favicon: 'src/client/js/img/icon.png',
     })
   ]
 }
