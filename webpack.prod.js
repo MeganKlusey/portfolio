@@ -1,5 +1,4 @@
 const path = require('path')
-const webpack = require('webpack')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -19,7 +18,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/',
+        type: 'asset/resource',
       },
     ]
   },
