@@ -10,7 +10,7 @@ const Contact = (props) => {
          <a href="mailto:megan.klusey@hotmail.co.uk">megan.klusey@hotmail.co.uk</a></p>
          <br/>
          <form className='contact-form' onSubmit={props.submitForm}>
-          <input id='name' name='name' type='text' className='form-control' placeholder='your full name' required data-aos="fade-right" />
+          <input id='name' name='name' type='text' className='form-control' placeholder='your name' required data-aos="fade-right" />
           <br/>
           <input id='email' name='email' type='email' className='form-control' placeholder='your email address' required data-aos="fade-right" />
           <br/>
