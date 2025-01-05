@@ -122,33 +122,6 @@ window.onload = function() {
 	$('.thumbnail-wrapper').mouseleave(function() {
 		$(this).children('.thumbnail-overlay').removeClass('slide-up').addClass('slide-down')
 	})
-	
-	function submitForm() {
-		document.getElementById('submit').disabled = true;
-		document.getElementById('status').innerHTML = 'Please wait...';
-		document.getElementById('name').value = document.getElementById('name').value.replace(/\s*$/,"");
-		formData.append('name', document.getElementById('name').value);
-		formData.append('email', document.getElementById('email').value);
-		formData.append('message', document.getElementById('message').value);
-		
-		let formData = new FormData();
-		let ajax = new XMLHttpRequest();
-		ajax.open('POST', 'contact-form.php');
-		ajax.onreadystatechange = function() {
-			if(ajax.readyState == 4 && ajax.status == 200) {
-				if(ajax.responseText == 'success') {
-					document.getElementById('contact-form').innerHTML = '<h2>Thank you, '
-					+document.getElementById('name').value +', your message has been sent.</h2>';
-				} else {
-					document.getElementById('status').innerHTML = `<h2>Sorry, there was a problem 
-					sending your message. Please try again."</h2>`
-					console.log(ajax.responseText);
-					document.getElementById('submit').disabled = false;
-				}
-			}
-		};
-		ajax.send(formData);
-	}
 
 	$('#submit').hover(function() {
 		$(this).addClass('shine')
