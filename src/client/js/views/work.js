@@ -1,6 +1,9 @@
 'use strict'
 
 import React from 'react'
+import MyMedium from '../img/mymedium.png'
+import The10Vinyls from '../img/the-10-vinyls.png'
+import HelloWorldByeWorld from '../img/hello-world-bye-world.png'
 
 const Work = (props) => {
   return (
@@ -22,7 +25,7 @@ const Work = (props) => {
                 </a>
               </div>
             </div>
-            <img src='src/client/js/img/mymedium.png' className='thumbnail' alt='My Medium thumbnail'/>
+            <img src={MyMedium} className='thumbnail' alt='My Medium thumbnail'/>
           </div>
         </div>
         <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="50">
@@ -41,7 +44,7 @@ const Work = (props) => {
                 </a>
               </div>
             </div>
-            <img src='src/client/js/img/the-10-vinyls.png' className='thumbnail' alt='The 10 Vinyls thumbnail'/>
+            <img src={The10Vinyls} className='thumbnail' alt='The 10 Vinyls thumbnail'/>
           </div>
         </div>
         <div className='thumbnail-container' data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100">
@@ -60,7 +63,7 @@ const Work = (props) => {
                 </a>
               </div>
             </div>
-            <img src='src/client/js/img/hello-world-bye-world.png' className='thumbnail cover' alt='Hello World Bye World thumbnail'/>
+            <img src={HelloWorldByeWorld} className='thumbnail cover' alt='Hello World Bye World thumbnail'/>
           </div>
         </div>
       </div>
