@@ -115,6 +115,14 @@ window.onload = function() {
 
 	resizeHeader();
 
+	$('#gform').on('submit', function(e) {
+		$('.contact-form-wrapper *').fadeOut(1000);
+		setTimeout(() => {
+			$('<p>Thank you, your message has been sent.</p>')
+			.appendTo('.contact-form-wrapper');
+		}, 1000)
+	});
+
 	$('.thumbnail-wrapper').mouseenter(function() {
 		$(this).children('.thumbnail-overlay').removeClass('slide-down').addClass('slide-up')
 	})
