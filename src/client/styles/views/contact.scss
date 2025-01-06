@@ -47,9 +47,13 @@ $xl: 1280px;
 
 		.contact-description {
 			color: #212221;
-			width: 75%;
 			margin: 0 auto;
-			
+			width: 75%;
+
+			@media screen and (max-width: $sm) {
+				width: 100%;
+			}
+
 			a {
 				color: #003478;
 
