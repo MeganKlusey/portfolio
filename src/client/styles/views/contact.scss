@@ -49,17 +49,17 @@ $xl: 1280px;
 			color: #212221;
 			margin: 0 auto;
 			width: 75%;
-
+			
 			@media screen and (max-width: $sm) {
 				width: 100%;
 			}
-
+			
 			a {
 				color: #003478;
+				transition-duration: 200ms;
 
 				&:hover {
 					opacity: 0.6;
-					transition: 0.1s;
 				}
 			}
 		}
