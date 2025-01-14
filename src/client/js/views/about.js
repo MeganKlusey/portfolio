@@ -15,7 +15,7 @@ const About = (props) => {
           towards optimisation. I am eager to continue growing and propel 
           my career to new heights.
           <br/><br/>
-          With nearly four years of proven commercial experience and a first-class 
+          With four years of proven commercial experience and a first-class 
           Honours degree in the computing field, my journey so far has equipped me with a 
           diverse skill set, including technologies like <strong>React</strong>,&nbsp;
           <strong>Vue</strong>, <strong>TypeScript</strong>,&nbsp;
