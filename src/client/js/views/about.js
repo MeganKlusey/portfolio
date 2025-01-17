@@ -10,17 +10,17 @@ const About = (props) => {
           <strong>My passion for front end development stems from the opportunity to 
           blend problem-solving with creativity harmoniously.</strong>
           <br/><br/>
-          From sleek aesthetics and seemless functionality, I believe that 
-          users world-wide deserve to have a satisfying experience, and this drives me 
-          towards optimisation. I am eager to continue growing and propel 
-          my career to new heights.
+          From sleek aesthetics and seamless functionality, I believe that 
+          users worldwide deserve to have a satisfying experience, and this drives me 
+          towards innovation and optimisation. I aim to continue growing as a developer and propel 
+          myself to new heights.
           <br/><br/>
           With four years of proven commercial experience and a first-class 
           Honours degree in the computing field, my journey so far has equipped me with a 
-          diverse skill set, including technologies like <strong>React</strong>,&nbsp;
+          diverse skill set, including technologies such as <strong>React</strong>,&nbsp;
           <strong>Vue</strong>, <strong>TypeScript</strong>,&nbsp;
           <strong>Node.js</strong>, <strong>HTML</strong>, <strong>SCSS</strong>,
-          and <strong>Tailwind</strong>, showcased in my projects below.
+          and <strong>Tailwind</strong>, which are showcased in my projects below.
         </p>
       </div>
     </section>
