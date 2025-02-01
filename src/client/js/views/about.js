@@ -7,16 +7,20 @@ const About = (props) => {
     <section className='about-container' id="about">
       <div>
         <p className='aboutText' data-aos-anchor-placement="top-center" data-aos="zoom-in" data-aos-duration="300">
-          I'm a front end developer, and passionate about it as it provides the opportunity to combine the 
-          analytic with the creative. With a degree in Business Management with Computer Science,
-          I am now looking for a role in front-end development to take my skills to the next level. My knowledge of languages include:
+          <strong>My passion for front end development stems from the opportunity to 
+          blend problem-solving with creativity harmoniously.</strong>
           <br/><br/>
-          HTML, CSS, JavaScript, jQuery, React, Vue, PHP.
+          From sleek aesthetics and seamless functionality, I believe that 
+          users worldwide deserve to have a satisfying experience, and this drives me 
+          towards innovation and optimisation. I aim to continue growing as a developer and propel 
+          myself to new heights.
           <br/><br/>
-          In addition to this, I have experience using WordPress
-          and proficient in Microsoft Office software. Digital marketing
-          also piques my interest, with a qualification in Google Analytics and 
-          understanding of building SEO-friendly websites.
+          With four years of commercial experience and a first-class 
+          Honours degree in the computing field, my journey so far has equipped me with a 
+          diverse skill set, including technologies such as <strong>React</strong>,&nbsp;
+          <strong>Vue.js</strong>, <strong>TypeScript</strong>,&nbsp;
+          <strong>Node.js</strong>, <strong>HTML</strong>, <strong>SCSS</strong>,
+          and <strong>Tailwind</strong>, which are showcased in my projects below.
         </p>
       </div>
     </section>

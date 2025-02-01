@@ -34,7 +34,7 @@ const Work = (props) => {
               <div className='overlay-content'>
                 <div className='project-info'>
                   <h4>The 10 Vinyls</h4>
-                  <p><span className='list-title'>Tech Stack:</span>&nbsp;<span className='list'>Vue, SCSS, TypeScript</span></p>
+                  <p><span className='list-title'>Tech Stack:</span>&nbsp;<span className='list'>Vue.js, SCSS, TypeScript</span></p>
                 </div>
                 <a href="https://meganklusey.github.io/the-10-vinyls/" className='view-project' target="_blank">
                   <p>View project</p>
