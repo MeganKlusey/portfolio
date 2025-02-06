@@ -20,7 +20,7 @@ const About = (props) => {
           diverse skill set, including technologies such as <strong>React</strong>,&nbsp;
           <strong>Vue.js</strong>, <strong>TypeScript</strong>,&nbsp;
           <strong>Node.js</strong>, <strong>HTML</strong>, <strong>SCSS</strong>,
-          and <strong>Tailwind</strong>, which are showcased in my projects below.
+          and <strong>Tailwind</strong>, which are showcased in my personal projects below.
         </p>
       </div>
     </section>
