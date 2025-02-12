@@ -44,7 +44,7 @@ window.onload = function() {
 	function activeNav() {
 		sections.forEach((section) => {
 			const sectionTop = section.offsetTop;
-			if (scrollY >= sectionTop - 100) {
+			if (scrollY >= sectionTop - 101) {
 				current = section.getAttribute("id");
 			}
 		});
