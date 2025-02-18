@@ -7,7 +7,7 @@ const About = (props) => {
     <section className='about-container' id="about">
       <div>
         <p className='aboutText' data-aos-anchor-placement="top-center" data-aos="zoom-in" data-aos-duration="300">
-          <strong>My passion for front end development stems from the opportunity to 
+          <strong>My passion for web development stems from the opportunity to 
           blend problem-solving with creativity harmoniously.</strong>
           <br/><br/>
           From sleek aesthetics and seamless functionality, I believe that 
