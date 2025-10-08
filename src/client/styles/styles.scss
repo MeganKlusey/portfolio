@@ -3,34 +3,31 @@ $md: 768px;
 $lg: 1024px;
 $xl: 1280px;
 
-@use "./views/header.scss";
-@use "./views/home.scss";
-@use "./views/about.scss";
-@use "./views/work.scss";
-@use "./views/contact.scss";
+@use './views/header.scss';
+@use './views/home.scss';
+@use './views/about.scss';
+@use './views/work.scss';
+@use './views/contact.scss';
 
-*,
-body {
-  margin: 0;
-  padding: 0;
+*, body {
+	margin: 0;
+	padding: 0;
 
-  p {
-    font-family: "Cardo";
-    font-size: 24px;
-  }
+	p {
+		font-family: 'Cardo';
+		font-size: 24px;
+	}
 
-  .about-container,
-  .work-container,
-  .contact-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    min-height: calc(100vh - 100px);
-    width: 80%;
+	.about-container, .work-container, .contact-container{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		min-height: calc(100vh - 100px);
+		width: 80%;
 
-    &:not(.contact-container) > div {
-      padding: 50px 0;
-    }
-  }
+		&:not(.contact-container) > div {
+			padding: 50px 0;
+		}
+	}
 }
