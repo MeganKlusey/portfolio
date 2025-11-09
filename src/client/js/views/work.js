@@ -142,7 +142,7 @@ const Work = (props) => {
                     <p>
                       <span className="list-title">Tech Stack:</span>&nbsp;
                       <span className="list">
-                        WordPress, Tailwind, Scrollmagic
+                        WordPress, Tailwind, JavaScript, ScrollMagic
                       </span>
                     </p>
                   </div>
@@ -178,7 +178,7 @@ const Work = (props) => {
                     <h4>TSL</h4>
                     <p>
                       <span className="list-title">Tech Stack:</span>&nbsp;
-                      <span className="list">WordPress, GSAP</span>
+                      <span className="list">WordPress, SCSS, jQuery</span>
                     </p>
                   </div>
                   <a
@@ -213,7 +213,9 @@ const Work = (props) => {
                     <h4>SEKO</h4>
                     <p>
                       <span className="list-title">Tech Stack:</span>&nbsp;
-                      <span className="list">GSAP, SVG, SCSS, JavaScript</span>
+                      <span className="list">
+                        PHP (Yii2), Tailwind, jQuery, GSAP, ScrollMagic
+                      </span>
                     </p>
                   </div>
                   <a
@@ -248,7 +250,7 @@ const Work = (props) => {
                     <h4>Domino Jewellery</h4>
                     <p>
                       <span className="list-title">Tech Stack:</span>&nbsp;
-                      <span className="list">GSAP, SVG, SCSS, JavaScript</span>
+                      <span className="list">PHP (Yii2), Tailwind, jQuery</span>
                     </p>
                   </div>
                   <a
