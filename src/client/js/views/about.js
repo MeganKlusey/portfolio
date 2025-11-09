@@ -29,9 +29,9 @@ const About = (props) => {
           me with a diverse skill set, including technologies such as{" "}
           <strong>React</strong>,&nbsp;
           <strong>Vue.js</strong>, <strong>TypeScript</strong>,&nbsp;
-          <strong>Node.js</strong>, <strong>HTML</strong>, <strong>SCSS</strong>
-          , and <strong>Tailwind</strong>, which are showcased in my personal
-          projects below.
+          <strong>PHP (Yii2)</strong>, <strong>HTML</strong>,{" "}
+          <strong>SCSS</strong>, and <strong>Tailwind</strong>, which are
+          showcased in some of my projects below.
         </p>
       </div>
     </section>

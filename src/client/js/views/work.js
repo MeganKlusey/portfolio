@@ -12,7 +12,7 @@ import DominoJewellery from "../img/domino-jewellery.png";
 const Work = (props) => {
   return (
     <section className="work-container" id="work">
-      <div class="work-category">
+      <div className="work-category">
         <h3>Personal Projects:</h3>
         <div className="thumbnails-container">
           <div
@@ -123,7 +123,7 @@ const Work = (props) => {
           </div>
         </div>
       </div>
-      <div class="work-category">
+      <div className="work-category">
         <h3>
           Professional Projects (collaborative work completed as part of my role
           at Toru Digital):
