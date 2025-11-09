@@ -14,7 +14,7 @@ const Work = (props) => {
     <section className="work-container" id="work">
       <div className="work-categories">
         <div className="work-category">
-          <h3>Personal Projects:</h3>
+          <h3 data-aos="zoom-in">Personal Projects:</h3>
           <div className="thumbnails-container">
             <div
               className="thumbnail-container"
@@ -127,7 +127,7 @@ const Work = (props) => {
           </div>
         </div>
         <div className="work-category">
-          <h3>
+          <h3 data-aos="zoom-in">
             Professional Projects (collaborative work completed as part of my
             role at Toru Digital):
           </h3>
