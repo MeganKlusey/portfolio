@@ -128,8 +128,8 @@ const Work = (props) => {
         </div>
         <div className="work-category">
           <h3 data-aos="zoom-in">
-            Professional Projects (collaborative work completed as part of my
-            role at Toru Digital):
+            Professional Projects (collaborative work undertaken as part of my
+            front-end focused role at Toru Digital):
           </h3>
           <div className="thumbnails-container">
             <div
