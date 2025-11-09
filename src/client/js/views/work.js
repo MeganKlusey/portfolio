@@ -141,11 +141,13 @@ const Work = (props) => {
                     <h4>WSM Industries</h4>
                     <p>
                       <span className="list-title">Tech Stack:</span>&nbsp;
-                      <span className="list">WordPress, Tailwind, GSAP</span>
+                      <span className="list">
+                        WordPress, Tailwind, Scrollmagic
+                      </span>
                     </p>
                   </div>
                   <a
-                    href="https://meganklusey.github.io/mymedium/"
+                    href="https://wsm-ind.com/"
                     className="view-project"
                     target="_blank"
                   >
@@ -176,11 +178,11 @@ const Work = (props) => {
                     <h4>TSL</h4>
                     <p>
                       <span className="list-title">Tech Stack:</span>&nbsp;
-                      <span className="list">Vue.js, SCSS, TypeScript</span>
+                      <span className="list">WordPress, GSAP</span>
                     </p>
                   </div>
                   <a
-                    href="https://meganklusey.github.io/the-10-vinyls/"
+                    href="https://tslprojects.com/"
                     className="view-project"
                     target="_blank"
                   >
@@ -215,7 +217,7 @@ const Work = (props) => {
                     </p>
                   </div>
                   <a
-                    href="https://codepen.io/Megan-K/pen/vEBBKxg"
+                    href="https://www.seko.com/global"
                     className="view-project"
                     target="_blank"
                   >
@@ -228,7 +230,7 @@ const Work = (props) => {
               </div>
               <img
                 src={SEKO}
-                className="thumbnail cover"
+                className="thumbnail cover top"
                 alt="SEKO thumbnail"
               />
             </div>
@@ -250,7 +252,7 @@ const Work = (props) => {
                     </p>
                   </div>
                   <a
-                    href="https://codepen.io/Megan-K/pen/vEBBKxg"
+                    href="https://www.dominojewellery.com/en/"
                     className="view-project"
                     target="_blank"
                   >
