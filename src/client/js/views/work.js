@@ -129,7 +129,7 @@ const Work = (props) => {
         <div className="work-category">
           <h3 data-aos="zoom-in">
             Professional Projects (collaborative work undertaken as part of my
-            front-end focused role at Toru Digital):
+            front-end focused agency role):
           </h3>
           <div className="thumbnails-container">
             <div
