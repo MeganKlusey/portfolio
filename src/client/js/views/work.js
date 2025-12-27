@@ -29,7 +29,8 @@ const Work = (props) => {
                       <p>
                         <span className="list-title">Tech Stack:</span>&nbsp;
                         <span className="list">
-                          React, Node.js, Tailwind, jQuery, REST API, AWS
+                          React, Tailwind, jQuery, REST API, Node.js, Cloudflare
+                          Workers, AWS (formerly used)
                         </span>
                       </p>
                     </div>
@@ -129,7 +130,7 @@ const Work = (props) => {
         <div className="work-category">
           <h3 data-aos="zoom-in">
             Professional Projects (collaborative work undertaken as part of my
-            front-end-focused agency role at Toru Digital):
+            front-end-focused agency role):
           </h3>
           <div className="thumbnails-container">
             <div
