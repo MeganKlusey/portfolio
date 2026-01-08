@@ -10,6 +10,100 @@ import SEKO from "../img/seko.png";
 import DominoJewellery from "../img/domino-jewellery.png";
 
 const Work = (props) => {
+  const projects = [
+    {
+      type: "personal",
+      title: "Personal Projects:",
+      projects: [
+        {
+          name: "myMedium",
+          aosDelay: null,
+          techStack: `React, Tailwind, jQuery, REST API, Node.js, Cloudflare Workers, 
+          AWS (formerly used)`,
+          link: "https://meganklusey.github.io/mymedium/",
+          image: {
+            url: MyMedium,
+            alt: "My Medium thumbnail",
+            position: null,
+          },
+        },
+        {
+          name: "The 10 Vinyls",
+          aosDelay: 50,
+          techStack: `Vue.js, SCSS, TypeScript`,
+          link: "https://meganklusey.github.io/the-10-vinyls/",
+          image: {
+            url: The10Vinyls,
+            alt: "The 10 Vinyls thumbnail",
+            position: null,
+          },
+        },
+        {
+          name: "Hello World / Bye World",
+          aosDelay: 100,
+          techStack: "GSAP, SVG, SCSS, JavaScript",
+          link: "https://codepen.io/Megan-K/pen/vEBBKxg/",
+          image: {
+            url: HelloWorldByeWorld,
+            alt: "Hello World / Bye World thumbnail",
+            position: "cover",
+          },
+        },
+      ],
+    },
+    {
+      type: "professional",
+      title: `Professional Projects (collaborative work undertaken as part of my 
+      front-end-focused agency role):`,
+      projects: [
+        {
+          name: "WSM Industries",
+          aosDelay: null,
+          techStack: `WordPress, Tailwind, JavaScript, ScrollMagic`,
+          link: "https://wsm-ind.com/",
+          image: {
+            url: WSMIndustries,
+            alt: "WSM Industries thumbnail",
+            position: "cover top",
+          },
+        },
+        {
+          name: "TSL",
+          aosDelay: 50,
+          techStack: `WordPress, SCSS, jQuery`,
+          link: "https://tslprojects.com/",
+          image: {
+            url: TSL,
+            alt: "TSL thumbnail",
+            position: "cover top",
+          },
+        },
+        {
+          name: "SEKO",
+          aosDelay: 100,
+          techStack: `PHP (Yii2), Tailwind, jQuery, GSAP, ScrollMagic`,
+          link: "https://www.seko.com/global/",
+          image: {
+            url: SEKO,
+            alt: "SEKO thumbnail",
+            position: "cover top",
+          },
+        },
+        {
+          name: "Domino Jewellery",
+          aosDelay: 150,
+          techStack: `PHP (Yii2), Tailwind, jQuery`,
+          link: "https://www.dominojewellery.com/en/",
+          image: {
+            url: DominoJewellery,
+            alt: "Domino Jewellery thumbnail",
+            position: "cover top",
+          },
+        },
+      ],
+    },
+  ];
+
   return (
     <section className="work-container" id="work">
       <div className="work-categories">
@@ -245,7 +339,7 @@ const Work = (props) => {
               className="thumbnail-container"
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
-              data-aos-delay="100"
+              data-aos-delay="150"
             >
               <div className="thumbnail-wrapper">
                 <div className="thumbnail-overlay">
