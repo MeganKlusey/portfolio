@@ -4,133 +4,148 @@ $lg: 1024px;
 $xl: 1280px;
 
 .fade {
-	animation-duration: 0.5s;
-	animation-name: fade;
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  animation-name: fade;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
 }
 
 @-webkit-keyframes fade {
-	from {
-		opacity: 0.4;
-	}
+  from {
+    opacity: 0.4;
+  }
 
-	to {
-		opacity: 1;
-	}
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-	from {
-		opacity: 0.4;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .contact-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-	.contact-form-wrapper {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		gap: 15px;
-		width: 55%;
+  .contact-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    width: 55%;
 
-		@media only screen and (max-width: $lg) {
-			width: 100%;
-		}
+    @media only screen and (max-width: $lg) {
+      width: 100%;
+    }
 
-		.contact-description {
-			color: #212221;
-			margin: 0 auto;
-			width: 75%;
-			
-			@media screen and (max-width: $sm) {
-				width: 100%;
-			}
-			
-			a {
-				color: #003478;
-				transition-duration: 200ms;
+    .contact-description {
+      color: #212221;
+      margin: 0 auto;
+      width: 75%;
 
-				&:hover {
-					opacity: 0.6;
-				}
-			}
-		}
+      @media screen and (max-width: $sm) {
+        width: 100%;
+      }
 
-		.contact-form {
-			display: flex;
-			flex-direction: column;
-			font-family: 'Cardo';
-			transition: all 1s ease-in-out;
+      a {
+        color: #003478;
+        transition-duration: 200ms;
 
-			.form-control {
-				background: transparent;
-				border: none;
-				border-bottom: 1px solid gray;
-				color: #212221;
-				font-family: 'Cardo';
-				font-size: 18px;
-				outline: none;
-				width: 100%;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
 
-				&::placeholder {
-					font-style: italic;
-				}
-			}
-		
-			input {
-				height: 45px;
-			}
-		
-			textarea {
-				height: 100px;
-				overflow: auto;
-			}
-		
-			.submit {
-				background: #003478;
-				border-color: transparent;
-				color: #fff;
-				font-family: 'Oswald', sans-serif;;
-				font-size: 20px;
-				height: 40px;
-				letter-spacing: 2px;
-				margin-top: 12px;
-				overflow: hidden;
-				text-align: center;
-				width: 100%;
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      font-family: "Cardo";
+      transition: all 1s ease-in-out;
 
-				&.shine {
-					color: #fff;
-					cursor: pointer;
-					background: #003478 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
-					background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
-					-webkit-background-size: 200%;
-					-webkit-animation-name: shine;
-					-webkit-animation-duration: 3s;
-					-webkit-animation-iteration-count: infinite;
-					-webkit-animation-play-state: running;
-				}
+      .form-control {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid gray;
+        color: #212221;
+        font-family: "Cardo";
+        font-size: 18px;
+        outline: none;
+        width: 100%;
 
-					@-webkit-keyframes shine {
-						0% {
-							background-position: 120%
-						} 100% {
-							background-position: -50%
-						}
-				}
-			}
-		}
+        &::placeholder {
+          font-style: italic;
+        }
+      }
 
-		#hidden_iframe {
-			display: none;
-		}
-	}
+      input {
+        height: 45px;
+      }
+
+      textarea {
+        height: 100px;
+        overflow: auto;
+      }
+
+      .submit {
+        background: #003478;
+        border-color: transparent;
+        color: #fff;
+        font-family: "Oswald", sans-serif;
+        font-size: 20px;
+        height: 40px;
+        letter-spacing: 2px;
+        margin-top: 12px;
+        overflow: hidden;
+        text-align: center;
+        width: 100%;
+
+        &.shine {
+          color: #fff;
+          cursor: pointer;
+          background: #003478 -webkit-gradient(
+              linear,
+              left top,
+              right top,
+              from(#222),
+              to(#222),
+              color-stop(0.5, #fff)
+            ) 0 0 no-repeat;
+          background-image: -webkit-linear-gradient(
+            -40deg,
+            transparent 0%,
+            transparent 40%,
+            #fff 50%,
+            transparent 60%,
+            transparent 100%
+          );
+          -webkit-background-size: 200%;
+          -webkit-animation-name: shine;
+          -webkit-animation-duration: 3s;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-play-state: running;
+        }
+
+        @-webkit-keyframes shine {
+          0% {
+            background-position: 120%;
+          }
+          100% {
+            background-position: -50%;
+          }
+        }
+      }
+    }
+
+    #hidden_iframe {
+      display: none;
+    }
+  }
 }
