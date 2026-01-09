@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const About = (props) => {
+const About = () => {
   return (
     <section className="about-container" id="about">
       <div>
@@ -29,7 +29,7 @@ const About = (props) => {
           me with a diverse skill set, including technologies such as{" "}
           <strong>React</strong>,&nbsp;
           <strong>Vue.js</strong>, <strong>TypeScript</strong>,&nbsp;
-          <strong>PHP (Yii2)</strong>, <strong>HTML</strong>,{" "}
+          <strong>PHP (Yii2)</strong>, <strong>HTML</strong>,&nbsp;
           <strong>SCSS</strong>, and <strong>Tailwind</strong>, which are
           showcased in some of my projects below.
         </p>
