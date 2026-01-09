@@ -108,9 +108,9 @@ const Work = () => {
     <section className="work-container" id="work">
       <div className="work-categories">
         {projectTypes &&
-          projectTypes.map((projectType) => {
+          projectTypes.map((projectType, index) => {
             return (
-              <div className="work-category">
+              <div key={index} className="work-category">
                 {projectType && (
                   <>
                     {projectType.title && (
@@ -118,9 +118,10 @@ const Work = () => {
                     )}
                     <div className="thumbnails-container">
                       {projectType.type == "personal" &&
-                        projectType.projects?.map((project) => {
+                        projectType.projects?.map((project, index) => {
                           return (
                             <div
+                              key={index}
                               className="thumbnail-container"
                               data-aos="fade-up"
                               data-aos-delay={project.aosDelay}
@@ -163,9 +164,10 @@ const Work = () => {
                           );
                         })}
                       {projectType.type == "professional" &&
-                        projectType.projects?.map((project) => {
+                        projectType.projects?.map((project, index) => {
                           return (
                             <div
+                              key={index}
                               className="thumbnail-container"
                               data-aos="fade-up"
                               data-aos-delay={project.aosDelay}
