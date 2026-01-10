@@ -1,8 +1,4 @@
-$sm: 640px;
-$md: 768px;
-$lg: 1024px;
-$xl: 1280px;
-
+@import "./variables";
 @import "./views/header.scss";
 @import "./views/home.scss";
 @import "./views/about.scss";
