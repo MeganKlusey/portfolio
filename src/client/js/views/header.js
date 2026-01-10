@@ -25,39 +25,39 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <div className="title-wrapper">
-          <h1 className="base">
-            <a className="header-btn home scroll" href="#home">
-              <div className="shine">MEGAN KLUSEY</div>
-            </a>
-          </h1>
-          <h1 className="gradient" data-text="MEGAN KLUSEY"></h1>
-        </div>
+        <h1 className="title-wrapper">
+          <a className="header-btn home scroll" href="#home">
+            <span className="base">
+              <span className="shine">MEGAN KLUSEY</span>
+            </span>
+          </a>
+          <span className="gradient" data-text="MEGAN KLUSEY"></span>
+        </h1>
         <ul>
-          <div className="about-wrapper">
-            <li className="base">
-              <a className="header-btn about scroll" href="#about">
-                <div className="shine">ABOUT</div>
-              </a>
-            </li>
-            <li className="gradient" data-text="ABOUT"></li>
-          </div>
-          <div className="work-wrapper">
-            <li className="base">
-              <a className="header-btn work scroll" href="#work">
-                <div className="shine">WORK</div>
-              </a>
-            </li>
-            <li className="gradient" data-text="WORK"></li>
-          </div>
-          <div className="contact-wrapper">
-            <li className="base">
-              <a className="header-btn contact scroll" href="#contact">
-                <div className="shine">CONTACT</div>
-              </a>
-            </li>
-            <li className="gradient" data-text="CONTACT"></li>
-          </div>
+          <li className="about-wrapper">
+            <a className="nav-list-btn about scroll" href="#about">
+              <span className="base">
+                <span className="shine">ABOUT</span>
+              </span>
+            </a>
+            <span className="gradient" data-text="ABOUT"></span>
+          </li>
+          <li className="work-wrapper">
+            <a className="nav-list-btn work scroll" href="#work">
+              <span className="base">
+                <span className="shine">WORK</span>
+              </span>
+            </a>
+            <span className="gradient" data-text="WORK"></span>
+          </li>
+          <li className="contact-wrapper">
+            <a className="nav-list-btn contact scroll" href="#contact">
+              <span className="base">
+                <span className="shine">CONTACT</span>
+              </span>
+            </a>
+            <span className="gradient" data-text="CONTACT"></span>
+          </li>
         </ul>
       </nav>
     </header>

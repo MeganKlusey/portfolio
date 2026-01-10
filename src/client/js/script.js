@@ -37,7 +37,7 @@ window.onload = function () {
   }
 
   const sections = document.querySelectorAll("section");
-  const navItem = document.querySelectorAll(".header-btn");
+  const navItem = document.querySelectorAll(".nav-list-btn");
   var current = "";
 
   $(window).scroll(function () {
@@ -68,94 +68,17 @@ window.onload = function () {
 
   function resizeHeader() {
     const navItems = ["about", "work", "contact"];
+    const isShrunk = document.documentElement.scrollTop > ($(window).width() > 676 ? 160 : 100);
 
-    if ($(window).width() > 676) {
-      if (
-        document.body.scrollTop > 160 ||
-        document.documentElement.scrollTop > 160
-      ) {
-        $("header").addClass("shrunk").css("transition", "0.4s");
-        $("header .title-wrapper .base").css("fontSize", "55px");
-        $("header .title-wrapper .gradient").css("fontSize", "55px");
-        $("header .title-wrapper .base a").css("color", "#b8b8b8");
-        $.each(navItems, function (i, item) {
-          $(`header .${item}-wrapper:not(.title-wrapper) .base`).css(
-            "fontSize",
-            "28px"
-          );
-          $(`header .${item}-wrapper:not(.title-wrapper) .gradient`).css(
-            "fontSize",
-            "28px"
-          );
-          $(`header .${item}-wrapper:not(.title-wrapper) .base a`).css(
-            "color",
-            "#b8b8b8"
-          );
-        });
-      } else {
-        $("header").removeClass("shrunk");
-        $("header .title-wrapper .base").css("fontSize", "120px");
-        $("header .title-wrapper .gradient").css("fontSize", "120px");
-        $("header .title-wrapper .base a").css("color", "transparent");
-        $.each(navItems, function (i, item) {
-          $(`header .${item}-wrapper:not(.title-wrapper) .base`).css(
-            "fontSize",
-            "36px"
-          );
-          $(`header .${item}-wrapper:not(.title-wrapper) .gradient`).css(
-            "fontSize",
-            "36px"
-          );
-          $(`header .${item}-wrapper:not(.title-wrapper) .base a`).css(
-            "color",
-            "transparent"
-          );
-        });
-      }
-    } else if ($(window).width() <= 676) {
-      if (
-        document.body.scrollTop > 100 ||
-        document.documentElement.scrollTop > 100
-      ) {
-        $("header").addClass("shrunk").css("transition", "0.4s");
-        $("header .title-wrapper .base").css("fontSize", "55px");
-        $("header .title-wrapper .gradient").css("fontSize", "55px");
-        $("header .title-wrapper .base a").css("color", "#b8b8b8");
-        $.each(navItems, function (i, item) {
-          $(`header .${item}-wrapper:not(.title-wrapper) .base`).css(
-            "fontSize",
-            "28px"
-          );
-          $(`header .${item}-wrapper:not(.title-wrapper) .gradient`).css(
-            "fontSize",
-            "28px"
-          );
-          $(`header .${item}-wrapper:not(.title-wrapper) .base a`).css(
-            "color",
-            "#b8b8b8"
-          );
-        });
-      } else {
-        $("header").removeClass("shrunk");
-        $("header .title-wrapper .base").css("fontSize", "120px");
-        $("header .title-wrapper .gradient").css("fontSize", "120px");
-        $("header .title-wrapper .base a").css("color", "transparent");
-        $.each(navItems, function (i, item) {
-          $(`header .${item}-wrapper:not(.title-wrapper) .base`).css(
-            "fontSize",
-            "36px"
-          );
-          $(`header .${item}-wrapper:not(.title-wrapper) .gradient`).css(
-            "fontSize",
-            "36px"
-          );
-          $(`header .${item}-wrapper:not(.title-wrapper) .base a`).css(
-            "color",
-            "transparent"
-          );
-        });
-      }
-    }
+    $("header").toggleClass("shrunk", isShrunk).css("transition", "0.4s");
+    $("header .title-wrapper .base").css("fontSize", isShrunk ? "55px" : "120px");
+    $("header .title-wrapper .gradient").css("fontSize", isShrunk ? "55px" : "120px");
+    $("header .title-wrapper a .base").css("color", isShrunk ? "#b8b8b8" : "transparent");
+    $.each(navItems, function (i, item) {
+      $(`header .${item}-wrapper .base`).css("fontSize", isShrunk ? "28px" : "36px");
+      $(`header .${item}-wrapper .gradient`).css("fontSize", isShrunk ? "28px" : "36px");
+      $(`header .${item}-wrapper a .base`).css("color", isShrunk ? "#b8b8b8" : "transparent");
+    });
   }
 
   resizeHeader();
@@ -163,24 +86,16 @@ window.onload = function () {
   $("#gform").on("submit", function (e) {
     $(".contact-form-wrapper *").fadeOut(1000);
     setTimeout(() => {
-      $("<p>Thank you, your message has been sent.</p>").appendTo(
-        ".contact-form-wrapper"
-      );
+      $("<p>Thank you, your message has been sent.</p>").appendTo(".contact-form-wrapper");
     }, 1000);
   });
 
   $(".thumbnail-wrapper").mouseenter(function () {
-    $(this)
-      .children(".thumbnail-overlay")
-      .removeClass("slide-down")
-      .addClass("slide-up");
+    $(this).children(".thumbnail-overlay").removeClass("slide-down").addClass("slide-up");
   });
 
   $(".thumbnail-wrapper").mouseleave(function () {
-    $(this)
-      .children(".thumbnail-overlay")
-      .removeClass("slide-up")
-      .addClass("slide-down");
+    $(this).children(".thumbnail-overlay").removeClass("slide-up").addClass("slide-down");
   });
 
   $("#submit").hover(
