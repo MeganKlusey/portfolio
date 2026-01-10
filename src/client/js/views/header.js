@@ -5,19 +5,23 @@ import React from "react";
 const Header = () => {
   const nav = [
     {
-      name: "Megan Klusey",
+      title: "Megan Klusey",
+      name: "home",
       link: "#home",
     },
     {
-      name: "About",
+      title: "About",
+      name: "about",
       link: "#about",
     },
     {
-      name: "Work",
+      title: "Work",
+      name: "work",
       link: "#work",
     },
     {
-      name: "Contact",
+      title: "Contact",
+      name: "contact",
       link: "#contact",
     },
   ];
@@ -25,39 +29,31 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <h1 className="title-wrapper">
-          <a className="header-btn home scroll" href="#home">
-            <span className="base">
-              <span className="shine">MEGAN KLUSEY</span>
-            </span>
-          </a>
-          <span className="gradient" data-text="MEGAN KLUSEY"></span>
-        </h1>
+        {nav
+          .filter((item) => item.name == "home")
+          .map((item, index) => (
+            <h1 key={index} className="title-wrapper">
+              <a className={`header-btn ${item.name} scroll`} href={item.link}>
+                <span className="base">
+                  <span className="shine">{item.title}</span>
+                </span>
+              </a>
+              <span className="gradient" data-text={item.title}></span>
+            </h1>
+          ))}
         <ul>
-          <li className="about-wrapper">
-            <a className="nav-list-btn about scroll" href="#about">
-              <span className="base">
-                <span className="shine">ABOUT</span>
-              </span>
-            </a>
-            <span className="gradient" data-text="ABOUT"></span>
-          </li>
-          <li className="work-wrapper">
-            <a className="nav-list-btn work scroll" href="#work">
-              <span className="base">
-                <span className="shine">WORK</span>
-              </span>
-            </a>
-            <span className="gradient" data-text="WORK"></span>
-          </li>
-          <li className="contact-wrapper">
-            <a className="nav-list-btn contact scroll" href="#contact">
-              <span className="base">
-                <span className="shine">CONTACT</span>
-              </span>
-            </a>
-            <span className="gradient" data-text="CONTACT"></span>
-          </li>
+          {nav
+            .filter((item) => item.name != "home")
+            .map((item, index) => (
+              <li key={index} className={`${item.name}-wrapper`}>
+                <a className={`nav-list-btn ${item.name} scroll`} href={item.link}>
+                  <span className="base">
+                    <span className="shine">{item.title}</span>
+                  </span>
+                </a>
+                <span className="gradient" data-text={item.title}></span>
+              </li>
+            ))}
         </ul>
       </nav>
     </header>
