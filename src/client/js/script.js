@@ -70,7 +70,7 @@ window.onload = function () {
     const navItems = ["about", "work", "contact"];
     const isShrunk = document.documentElement.scrollTop > ($(window).width() > 676 ? 160 : 100);
 
-    $("header").toggleClass("shrunk", isShrunk).css("transition", "0.4s");
+    $("header").toggleClass("shrunk", isShrunk);
     $("header .title-wrapper .base").css("fontSize", isShrunk ? "55px" : "120px");
     $("header .title-wrapper .gradient").css("fontSize", isShrunk ? "55px" : "120px");
     $("header .title-wrapper a .base").css("color", isShrunk ? "#b8b8b8" : "transparent");
