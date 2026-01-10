@@ -118,13 +118,13 @@ header {
         a {
           &.active {
             .shine {
-              color: #003478;
+              color: $navy;
             }
           }
 
           &:hover:not(.active) {
             .shine {
-              color: #003478;
+              color: $navy;
               opacity: 0.6;
               transition: none;
             }
@@ -135,7 +135,7 @@ header {
   }
 
   &.shrunk {
-    background-color: #fff;
+    background-color: $white;
     top: 0%;
     height: 100px;
   }

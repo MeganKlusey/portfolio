@@ -1,8 +1,3 @@
-$sm: 640px;
-$md: 768px;
-$lg: 1024px;
-$xl: 1280px;
-
 .fade {
   animation-duration: 0.5s;
   animation-name: fade;
@@ -55,7 +50,7 @@ $xl: 1280px;
       }
 
       a {
-        color: #003478;
+        color: $navy;
         transition-duration: 200ms;
 
         &:hover {
@@ -95,7 +90,7 @@ $xl: 1280px;
       }
 
       .submit {
-        background: #003478;
+        background: $navy;
         border-color: transparent;
         color: #fff;
         font-family: "Oswald", sans-serif;
@@ -108,10 +103,10 @@ $xl: 1280px;
         width: 100%;
 
         &.shine {
-          color: #fff;
+          color: $white;
           cursor: pointer;
-          background: #003478 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
-          background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+          background: $navy -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, $white)) 0 0 no-repeat;
+          background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, $white 50%, transparent 60%, transparent 100%);
           -webkit-background-size: 200%;
           -webkit-animation-name: shine;
           -webkit-animation-duration: 3s;

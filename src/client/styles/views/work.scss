@@ -99,7 +99,7 @@
                   }
 
                   p {
-                    color: #003478;
+                    color: $navy;
                     font-family: "Oswald", sans-serif;
                     font-size: 16px;
                     text-transform: uppercase;
@@ -108,7 +108,7 @@
 
                   .chevron-forward {
                     display: flex;
-                    color: #003478;
+                    color: $navy;
                     font-family: "Oswald", sans-serif;
                   }
                 }
