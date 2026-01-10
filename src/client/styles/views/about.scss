@@ -1,12 +1,5 @@
 .about-container {
-  align-items: center;
   color: #212221;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-height: auto;
-  justify-content: space-around;
-  position: relative;
 
   @media only screen and (max-width: 767px) {
     padding-bottom: 80px;
