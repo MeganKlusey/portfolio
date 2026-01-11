@@ -1,8 +1,10 @@
+@use "../variables" as *;
+
 header {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   justify-content: center;
   position: fixed;
   width: 100%;

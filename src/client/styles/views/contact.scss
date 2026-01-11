@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 .fade {
   animation-duration: 0.5s;
   animation-name: fade;
@@ -62,7 +64,7 @@
     .contact-form {
       display: flex;
       flex-direction: column;
-      font-family: "Cardo";
+      font-family: $cardo;
       transition: all 1s ease-in-out;
 
       .form-control {
@@ -70,7 +72,7 @@
         border: none;
         border-bottom: 1px solid gray;
         color: #212221;
-        font-family: "Cardo";
+        font-family: $cardo;
         font-size: 18px;
         outline: none;
         width: 100%;
@@ -93,7 +95,7 @@
         background: $navy;
         border-color: transparent;
         color: #fff;
-        font-family: "Oswald", sans-serif;
+        font-family: $oswald;
         font-size: 20px;
         height: 40px;
         letter-spacing: 2px;

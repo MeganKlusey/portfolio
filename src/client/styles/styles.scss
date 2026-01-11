@@ -1,9 +1,9 @@
-@import "./variables";
-@import "./views/header.scss";
-@import "./views/home.scss";
-@import "./views/about.scss";
-@import "./views/work.scss";
-@import "./views/contact.scss";
+@use "./variables" as *;
+@use "./views/header.scss";
+@use "./views/home.scss";
+@use "./views/about.scss";
+@use "./views/work.scss";
+@use "./views/contact.scss";
 
 *,
 body {
@@ -11,7 +11,7 @@ body {
   padding: 0;
 
   p {
-    font-family: "Cardo";
+    font-family: $cardo;
     font-size: 24px;
   }
 
