@@ -7,25 +7,6 @@
   -webkit-animation-duration: 0.5s;
 }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .contact-container {
   display: flex;
   align-items: center;
@@ -43,7 +24,7 @@
     }
 
     .contact-description {
-      color: #212221;
+      color: $grey-1;
       margin: 0 auto;
       width: 75%;
 
@@ -71,7 +52,7 @@
         background: transparent;
         border: none;
         border-bottom: 1px solid gray;
-        color: #212221;
+        color: $grey-1;
         font-family: $cardo;
         font-size: 18px;
         outline: none;
@@ -94,7 +75,7 @@
       .submit {
         background: $navy;
         border-color: transparent;
-        color: #fff;
+        color: $white;
         font-family: $oswald;
         font-size: 20px;
         height: 40px;
@@ -107,8 +88,13 @@
         &.shine {
           color: $white;
           cursor: pointer;
-          background: $navy -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, $white)) 0 0 no-repeat;
+          background: $navy -webkit-gradient(linear, left top, right top, from($grey-1), to($grey-1), color-stop(0.5, $white)) 0 0 no-repeat;
           background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, $white 50%, transparent 60%, transparent 100%);
+          background-size: 200%;
+          animation-name: shine;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
           -webkit-background-size: 200%;
           -webkit-animation-name: shine;
           -webkit-animation-duration: 3s;
@@ -116,7 +102,7 @@
           -webkit-animation-play-state: running;
         }
 
-        @-webkit-keyframes shine {
+        @keyframes shine {
           0% {
             background-position: 120%;
           }
@@ -130,5 +116,14 @@
     #hidden_iframe {
       display: none;
     }
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }

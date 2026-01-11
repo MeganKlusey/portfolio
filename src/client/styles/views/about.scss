@@ -1,9 +1,9 @@
 @use "../variables" as *;
 
 .about-container {
-  color: #212221;
+  color: $grey-1;
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: $md) {
     padding-bottom: 80px;
   }
 }
