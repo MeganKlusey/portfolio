@@ -35,8 +35,8 @@ header {
     .about-wrapper,
     .work-wrapper,
     .contact-wrapper {
-      position: relative;
       width: auto;
+      position: relative;
       clip-path: inset(1px);
 
       .base,
@@ -62,10 +62,15 @@ header {
           position: absolute;
 
           .shine {
-            background: #b8b8b8 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
-            background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+            background: $grey-2 -webkit-gradient(linear, left top, right top, from($grey-1), to($grey-1), color-stop(0.5, $white)) 0 0 no-repeat;
+            background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, $white 50%, transparent 60%, transparent 100%);
             overflow: hidden;
             background-clip: text;
+            background-size: 200%;
+            background-clip: text;
+            animation-name: shine;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
             -webkit-background-size: 200%;
             -webkit-background-clip: text;
             -webkit-animation-name: shine;
@@ -73,14 +78,17 @@ header {
             -webkit-animation-iteration-count: infinite;
 
             &.about {
+              animation-name: shineAbout;
               -webkit-animation-name: shineAbout;
             }
 
             &.work {
+              animation-name: shineWork;
               -webkit-animation-name: shineWork;
             }
 
             &.contact {
+              animation-name: shineContact;
               -webkit-animation-name: shineContact;
             }
           }
@@ -95,7 +103,7 @@ header {
         &::after {
           content: attr(data-text);
           color: transparent;
-          background: linear-gradient(179deg, rgba(187, 187, 187, 0) 0%, rgba(255, 255, 255, 0.75) 44%, rgba(187, 188, 187, 0) 95%, rgba(187, 187, 187, 0) 100%);
+          background: linear-gradient(179deg, transparent 0%, rgba($white, 0.75) 44%, transparent 95%, transparent 100%);
           background-clip: text;
           -webkit-background-clip: text;
         }
@@ -140,6 +148,42 @@ header {
     background-color: $white;
     top: 0%;
     height: 100px;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: 150%;
+  }
+  100% {
+    background-position: -50%;
+  }
+}
+
+@keyframes shineAbout {
+  0% {
+    background-position: 340%;
+  }
+  100% {
+    background-position: -410%;
+  }
+}
+
+@keyframes shineWork {
+  0% {
+    background-position: 380%;
+  }
+  100% {
+    background-position: -200%;
+  }
+}
+
+@keyframes shineContact {
+  0% {
+    background-position: 470%;
+  }
+  100% {
+    background-position: -100%;
   }
 }
 
