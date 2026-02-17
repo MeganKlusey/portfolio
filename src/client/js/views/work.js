@@ -20,7 +20,7 @@ const Work = () => {
           name: "Modo (Landing Page)",
           aosDelay: null,
           techStack: `WordPress, PHP, HTML5, SCSS, JavaScript`,
-          link: "https://fa379ab8.modo-3xr.pages.dev/",
+          link: "https://dc946006.modo-3xr.pages.dev",
           image: {
             src: Modo,
             alt: "Modo thumbnail",
