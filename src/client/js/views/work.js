@@ -1,6 +1,7 @@
 "use strict";
 
 import React from "react";
+import Modo from "../img/modo.png";
 import MyMedium from "../img/mymedium.png";
 import The10Vinyls from "../img/the-10-vinyls.png";
 import HelloWorldByeWorld from "../img/hello-world-bye-world.png";
@@ -16,10 +17,20 @@ const Work = () => {
       title: "Personal Projects:",
       projects: [
         {
-          name: "myMedium",
+          name: "Modo (Landing Page)",
           aosDelay: null,
-          techStack: `React, Tailwind, jQuery, REST API, Node.js, Cloudflare Workers, 
-          AWS (formerly used)`,
+          techStack: `WordPress, PHP, HTML5, SCSS, JavaScript`,
+          link: "https://fa379ab8.modo-3xr.pages.dev/",
+          image: {
+            src: Modo,
+            alt: "Modo thumbnail",
+            position: null,
+          },
+        },
+        {
+          name: "myMedium",
+          aosDelay: 50,
+          techStack: `React, Tailwind, jQuery, REST API, Node.js`,
           link: "https://meganklusey.github.io/mymedium/",
           image: {
             src: MyMedium,
@@ -29,7 +40,7 @@ const Work = () => {
         },
         {
           name: "The 10 Vinyls",
-          aosDelay: 50,
+          aosDelay: 100,
           techStack: `Vue.js, SCSS, TypeScript`,
           link: "https://meganklusey.github.io/the-10-vinyls/",
           image: {
@@ -40,7 +51,7 @@ const Work = () => {
         },
         {
           name: "Hello World / Bye World",
-          aosDelay: 100,
+          aosDelay: 150,
           techStack: "GSAP, SVG, SCSS, JavaScript",
           link: "https://codepen.io/Megan-K/pen/vEBBKxg/",
           image: {
@@ -113,40 +124,24 @@ const Work = () => {
               <div key={index} className="work-category">
                 {projectType && (
                   <>
-                    {projectType.title && (
-                      <h3 data-aos="zoom-in">{projectType.title}</h3>
-                    )}
+                    {projectType.title && <h3 data-aos="zoom-in">{projectType.title}</h3>}
                     <div className="thumbnails-container">
                       {projectType.type == "personal" &&
                         projectType.projects?.map((project, index) => {
                           return (
-                            <div
-                              key={index}
-                              className="thumbnail-container"
-                              data-aos="fade-up"
-                              data-aos-delay={project.aosDelay}
-                              data-aos-anchor-placement="center-bottom"
-                            >
+                            <div key={index} className="thumbnail-container" data-aos="fade-up" data-aos-delay={project.aosDelay} data-aos-anchor-placement="center-bottom">
                               <div className="thumbnail-wrapper">
                                 <div className="thumbnail-overlay">
                                   <div className="overlay-content">
                                     <div className="project-info">
                                       <h4>{project.name}</h4>
                                       <p>
-                                        <span className="list-title">
-                                          Tech Stack:
-                                        </span>
+                                        <span className="list-title">Tech Stack:</span>
                                         &nbsp;
-                                        <span className="list">
-                                          {project.techStack}
-                                        </span>
+                                        <span className="list">{project.techStack}</span>
                                       </p>
                                     </div>
-                                    <a
-                                      href={project.link}
-                                      className="view-project"
-                                      target="_blank"
-                                    >
+                                    <a href={project.link} className="view-project" target="_blank">
                                       <p>View project</p>
                                       <div className="chevron-forward">
                                         <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -154,11 +149,7 @@ const Work = () => {
                                     </a>
                                   </div>
                                 </div>
-                                <img
-                                  src={project.image.src}
-                                  className={`thumbnail ${project.image.position}`}
-                                  alt={project.image.alt}
-                                />
+                                <img src={project.image.src} className={`thumbnail ${project.image.position}`} alt={project.image.alt} />
                               </div>
                             </div>
                           );
@@ -166,33 +157,19 @@ const Work = () => {
                       {projectType.type == "professional" &&
                         projectType.projects?.map((project, index) => {
                           return (
-                            <div
-                              key={index}
-                              className="thumbnail-container"
-                              data-aos="fade-up"
-                              data-aos-delay={project.aosDelay}
-                              data-aos-anchor-placement="center-bottom"
-                            >
+                            <div key={index} className="thumbnail-container" data-aos="fade-up" data-aos-delay={project.aosDelay} data-aos-anchor-placement="center-bottom">
                               <div className="thumbnail-wrapper">
                                 <div className="thumbnail-overlay">
                                   <div className="overlay-content">
                                     <div className="project-info">
                                       <h4>{project.name}</h4>
                                       <p>
-                                        <span className="list-title">
-                                          Tech Stack:
-                                        </span>
+                                        <span className="list-title">Tech Stack:</span>
                                         &nbsp;
-                                        <span className="list">
-                                          {project.techStack}
-                                        </span>
+                                        <span className="list">{project.techStack}</span>
                                       </p>
                                     </div>
-                                    <a
-                                      href={project.link}
-                                      className="view-project"
-                                      target="_blank"
-                                    >
+                                    <a href={project.link} className="view-project" target="_blank">
                                       <p>View project</p>
                                       <div className="chevron-forward">
                                         <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -200,11 +177,7 @@ const Work = () => {
                                     </a>
                                   </div>
                                 </div>
-                                <img
-                                  src={project.image.src}
-                                  className={`thumbnail ${project.image.position}`}
-                                  alt={project.image.alt}
-                                />
+                                <img src={project.image.src} className={`thumbnail ${project.image.position}`} alt={project.image.alt} />
                               </div>
                             </div>
                           );
