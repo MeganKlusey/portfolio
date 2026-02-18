@@ -3,6 +3,14 @@
 .about-container {
   color: $grey-1;
 
+  p {
+    text-wrap: pretty;
+
+    span {
+      display: inline-block;
+    }
+  }
+
   @media only screen and (max-width: $md) {
     padding-bottom: 80px;
   }
