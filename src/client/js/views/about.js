@@ -10,7 +10,7 @@ const About = () => {
           <strong>I'm a front-end developer with 4+ years of commercial experience building clean, user-focused websites and web applications within a digital agency environment.</strong>
           <br />
           <br />
-          I’ve worked closely with designers, developers, and project managers to deliver high-quality websites for a range of clients. Alongside development, I regularly test usability and identify
+          I've worked closely with designers, developers, and project managers to deliver high-quality websites for a range of clients. Alongside development, I regularly test usability and identify
           improvements, such as refining responsive layouts to ensure a consistent experience across devices.
           <br />
           <br />
