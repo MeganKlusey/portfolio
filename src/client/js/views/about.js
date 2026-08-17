@@ -7,7 +7,7 @@ const About = () => {
     <section className="about-container" id="about">
       <div>
         <p className="aboutText" data-aos-anchor-placement="top-center" data-aos="zoom-in" data-aos-duration="300">
-          <strong>I'm a front-end developer with 4+ years of commercial experience building clean, user-focused websites and web applications within a digital agency environment.</strong>
+          <strong>I have 5 years of commercial experience building clean, user-focused websites and web applications within a digital agency environment, alongside recent design work.</strong>
           <br />
           <br />
           I've worked closely with designers, developers, and project managers to deliver high-quality websites for a range of clients. Alongside development, I regularly test usability and identify
