@@ -20,7 +20,7 @@ const Work = () => {
           title: "Internal Ordering (design + dev)",
           name: "Internal Ordering",
           aosDelay: 50,
-          techStack: `Figma, Laravel, JavaScript, HTML, SCSS`,
+          techStack: `Figma, Laravel, JavaScript, HTML5, SCSS`,
           link: "https://tslprojects.com/",
           image: {
             src: InternalOrdering,
