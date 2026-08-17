@@ -6,7 +6,7 @@ import MyMedium from "../img/mymedium.png";
 import The10Vinyls from "../img/the-10-vinyls.png";
 import HelloWorldByeWorld from "../img/hello-world-bye-world.png";
 import WSMIndustries from "../img/wsm-industries.png";
-import TSL from "../img/tsl.png";
+import InternalOrdering from "../img/internal-ordering.png";
 import SEKO from "../img/seko.png";
 import DominoJewellery from "../img/domino-jewellery.png";
 
@@ -68,6 +68,17 @@ const Work = () => {
       front-end-focused agency role):`,
       projects: [
         {
+          name: "Internal Ordering",
+          aosDelay: 50,
+          techStack: `Figma, Laravel, JavaScript, HTML, SCSS`,
+          link: "https://tslprojects.com/",
+          image: {
+            src: InternalOrdering,
+            alt: "Internal Ordering thumbnail",
+            position: null,
+          },
+        },
+        {
           name: "WSM Industries",
           aosDelay: null,
           techStack: `WordPress, Tailwind, JavaScript, ScrollMagic`,
@@ -75,17 +86,6 @@ const Work = () => {
           image: {
             src: WSMIndustries,
             alt: "WSM Industries thumbnail",
-            position: "cover top",
-          },
-        },
-        {
-          name: "TSL",
-          aosDelay: 50,
-          techStack: `WordPress, SCSS, jQuery`,
-          link: "https://tslprojects.com/",
-          image: {
-            src: TSL,
-            alt: "TSL thumbnail",
             position: "cover top",
           },
         },
