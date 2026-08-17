@@ -2,7 +2,7 @@ window.onload = function () {
   AOS.init();
 
   VANTA.BIRDS({
-    el: ".home-container",
+    el: ".hero-container",
     color1: 0xb7e2e0,
     color2: 0x5b79c0,
     mouseControls: true,
@@ -32,7 +32,7 @@ window.onload = function () {
       {
         scrollTop: $(target).offset().top - 99,
       },
-      450
+      450,
     );
   }
 
@@ -104,6 +104,6 @@ window.onload = function () {
     },
     function () {
       $(this).removeClass("shine");
-    }
+    },
   );
 };

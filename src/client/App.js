@@ -1,26 +1,39 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Header from '../client/js/views/header'
-import Home from '../client/js/views/home'
-import About from '../client/js/views/about'
-import Work from '../client/js/views/work'
-import Contact from '../client/js/views/contact'
+import Header from "./js/views/index/header";
+import Hero from "./js/views/index/hero";
+import About from "./js/views/index/about";
+import Work from "./js/views/index/work";
+import Contact from "./js/views/index/contact";
+import InternalOrdering from "../client/js/views/internal-ordering";
 
-import '../client/js/birds'
-import '../client/js/script'
+import "../client/styles/styles.scss";
 
-import '../client/styles/styles.scss'
+import "../client/js/birds";
+import "../client/js/script";
 
 function App() {
   return (
-		<div className="App">
-      <Header />
-      <Home />
-      <About />
-      <Work />
-      <Contact />
-		</div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <Hero />
+              <About />
+              <Work />
+              <Contact />
+            </>
+          }
+        />
+
+        <Route path="/internal-ordering/" element={<InternalOrdering />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

@@ -1,14 +1,14 @@
 "use strict";
 
 import React from "react";
-import Modo from "../img/modo.png";
-import MyMedium from "../img/mymedium.png";
-import The10Vinyls from "../img/the-10-vinyls.png";
-import HelloWorldByeWorld from "../img/hello-world-bye-world.png";
-import WSMIndustries from "../img/wsm-industries.png";
-import InternalOrdering from "../img/internal-ordering.png";
-import SEKO from "../img/seko.png";
-import DominoJewellery from "../img/domino-jewellery.png";
+import Modo from "../../img/modo.png";
+import MyMedium from "../../img/mymedium.png";
+import The10Vinyls from "../../img/the-10-vinyls.png";
+import HelloWorldByeWorld from "../../img/hello-world-bye-world.png";
+import WSMIndustries from "../../img/wsm-industries.png";
+import InternalOrdering from "../../img/internal-ordering.png";
+import SEKO from "../../img/seko.png";
+import DominoJewellery from "../../img/domino-jewellery.png";
 
 const Work = () => {
   const projectTypes = [
@@ -21,7 +21,7 @@ const Work = () => {
           name: "Internal Ordering",
           aosDelay: 50,
           techStack: `Figma, Laravel, JavaScript, HTML5, SCSS`,
-          link: "https://tslprojects.com/",
+          link: "/internal-ordering/",
           image: {
             src: InternalOrdering,
             alt: "Internal Ordering thumbnail",

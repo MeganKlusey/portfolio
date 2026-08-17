@@ -2,9 +2,9 @@
 
 import React from "react";
 
-const Home = () => {
+const Hero = () => {
   return (
-    <section className="home-container" id="home">
+    <section className="hero-container" id="hero">
       <a className="scroll" href="#about">
         <div className="more-arrows-wrapper">
           <svg className="base more-arrows" width="75" viewBox="0 0 75 65" fill="url(#g1)">
@@ -42,4 +42,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hero;

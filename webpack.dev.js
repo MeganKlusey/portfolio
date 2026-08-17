@@ -1,43 +1,48 @@
-const path = require('path')
-const HtmlWebPackPlugin = require('html-webpack-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const path = require("path");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  entry: './src/client/index.js',
-  mode: 'development',
-  devtool: 'source-map',
+  entry: "./src/client/index.js",
+  mode: "development",
+  devtool: "source-map",
   output: {
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, "dist"),
   },
   devServer: {
     port: 3000,
     historyApiFallback: {
-      index: 'index.html'
-    }
+      index: "index.html",
+    },
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-        
+        loader: "babel-loader",
       },
       {
         test: /\.scss$/,
-        use: [ 'style-loader', 'css-loader', 'sass-loader' ]
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource'
+        type: "asset/resource",
       },
-    ]
+    ],
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './src/client/views/index.html',
-      filename: './index.html'
+      template: "./src/client/views/index.html",
+      filename: "index.html",
     }),
+
+    new HtmlWebPackPlugin({
+      template: "./src/client/views/internal-ordering.html",
+      filename: "internal-ordering/index.html",
+    }),
+
     new CleanWebpackPlugin(),
   ],
-}
+};
