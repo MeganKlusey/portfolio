@@ -13,60 +13,6 @@ import DominoJewellery from "../img/domino-jewellery.png";
 const Work = () => {
   const projectTypes = [
     {
-      type: "personal",
-      title: "Personal Projects",
-      projects: [
-        {
-          title: "Modo - Landing Page (dev)",
-          name: "Modo - Landing Page",
-          aosDelay: null,
-          techStack: `WordPress, PHP, HTML5, SCSS, JavaScript`,
-          link: "https://ac9a2890.modo-3xr.pages.dev",
-          image: {
-            src: Modo,
-            alt: "Modo thumbnail",
-            position: null,
-          },
-        },
-        {
-          title: "myMedium (design + dev)",
-          name: "myMedium",
-          aosDelay: 50,
-          techStack: `React, Tailwind, jQuery, REST API, Node.js`,
-          link: "https://meganklusey.github.io/mymedium/",
-          image: {
-            src: MyMedium,
-            alt: "My Medium thumbnail",
-            position: null,
-          },
-        },
-        {
-          title: "The 10 Vinyls (design + dev)",
-          name: "The 10 Vinyls",
-          aosDelay: 100,
-          techStack: `Vue.js, SCSS, TypeScript`,
-          link: "https://meganklusey.github.io/the-10-vinyls/",
-          image: {
-            src: The10Vinyls,
-            alt: "The 10 Vinyls thumbnail",
-            position: null,
-          },
-        },
-        {
-          title: "Hello World / Bye World (design + dev)",
-          name: "Hello World / Bye World",
-          aosDelay: 150,
-          techStack: "GSAP, SVG, SCSS, JavaScript",
-          link: "https://codepen.io/Megan-K/pen/vEBBKxg/",
-          image: {
-            src: HelloWorldByeWorld,
-            alt: "Hello World / Bye World thumbnail",
-            position: "cover",
-          },
-        },
-      ],
-    },
-    {
       type: "professional",
       title: `Professional Projects (includes collaborative agency work)`,
       projects: [
@@ -120,6 +66,60 @@ const Work = () => {
         },
       ],
     },
+    {
+      type: "personal",
+      title: "Personal Mini Projects",
+      projects: [
+        {
+          title: "Modo - Landing Page (dev)",
+          name: "Modo - Landing Page",
+          aosDelay: null,
+          techStack: `WordPress, PHP, HTML5, SCSS, JavaScript`,
+          link: "https://ac9a2890.modo-3xr.pages.dev",
+          image: {
+            src: Modo,
+            alt: "Modo thumbnail",
+            position: null,
+          },
+        },
+        {
+          title: "myMedium (design + dev)",
+          name: "myMedium",
+          aosDelay: 50,
+          techStack: `React, Tailwind, jQuery, REST API, Node.js`,
+          link: "https://meganklusey.github.io/mymedium/",
+          image: {
+            src: MyMedium,
+            alt: "My Medium thumbnail",
+            position: null,
+          },
+        },
+        {
+          title: "The 10 Vinyls (design + dev)",
+          name: "The 10 Vinyls",
+          aosDelay: 100,
+          techStack: `Vue.js, SCSS, TypeScript`,
+          link: "https://meganklusey.github.io/the-10-vinyls/",
+          image: {
+            src: The10Vinyls,
+            alt: "The 10 Vinyls thumbnail",
+            position: null,
+          },
+        },
+        {
+          title: "Hello World / Bye World (design + dev)",
+          name: "Hello World / Bye World",
+          aosDelay: 150,
+          techStack: "GSAP, SVG, SCSS, JavaScript",
+          link: "https://codepen.io/Megan-K/pen/vEBBKxg/",
+          image: {
+            src: HelloWorldByeWorld,
+            alt: "Hello World / Bye World thumbnail",
+            position: "cover",
+          },
+        },
+      ],
+    },
   ];
 
   return (
@@ -133,7 +133,7 @@ const Work = () => {
                   <>
                     {projectType.title && <h3 data-aos="zoom-in">{projectType.title}</h3>}
                     <div className="thumbnails-container">
-                      {projectType.type == "personal" &&
+                      {projectType.type == "professional" &&
                         projectType.projects?.map((project, index) => {
                           return (
                             <div key={index}>
@@ -164,7 +164,7 @@ const Work = () => {
                             </div>
                           );
                         })}
-                      {projectType.type == "professional" &&
+                      {projectType.type == "personal" &&
                         projectType.projects?.map((project, index) => {
                           return (
                             <div key={index}>
