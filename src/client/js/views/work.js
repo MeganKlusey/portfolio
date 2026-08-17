@@ -14,10 +14,11 @@ const Work = () => {
   const projectTypes = [
     {
       type: "personal",
-      title: "Personal Projects:",
+      title: "Personal Projects",
       projects: [
         {
-          name: "Modo (Landing Page)",
+          title: "Modo - Landing Page (dev)",
+          name: "Modo - Landing Page",
           aosDelay: null,
           techStack: `WordPress, PHP, HTML5, SCSS, JavaScript`,
           link: "https://ac9a2890.modo-3xr.pages.dev",
@@ -28,6 +29,7 @@ const Work = () => {
           },
         },
         {
+          title: "myMedium (design + dev)",
           name: "myMedium",
           aosDelay: 50,
           techStack: `React, Tailwind, jQuery, REST API, Node.js`,
@@ -39,6 +41,7 @@ const Work = () => {
           },
         },
         {
+          title: "The 10 Vinyls (design + dev)",
           name: "The 10 Vinyls",
           aosDelay: 100,
           techStack: `Vue.js, SCSS, TypeScript`,
@@ -50,6 +53,7 @@ const Work = () => {
           },
         },
         {
+          title: "Hello World / Bye World (design + dev)",
           name: "Hello World / Bye World",
           aosDelay: 150,
           techStack: "GSAP, SVG, SCSS, JavaScript",
@@ -64,10 +68,10 @@ const Work = () => {
     },
     {
       type: "professional",
-      title: `Professional Projects (collaborative work undertaken as part of my 
-      front-end-focused agency role):`,
+      title: `Professional Projects (includes collaborative agency work)`,
       projects: [
         {
+          title: "Internal Ordering (design + dev)",
           name: "Internal Ordering",
           aosDelay: 50,
           techStack: `Figma, Laravel, JavaScript, HTML, SCSS`,
@@ -79,6 +83,7 @@ const Work = () => {
           },
         },
         {
+          title: "WSM Industries (dev)",
           name: "WSM Industries",
           aosDelay: null,
           techStack: `WordPress, Tailwind, JavaScript, ScrollMagic`,
@@ -90,6 +95,7 @@ const Work = () => {
           },
         },
         {
+          title: "SEKO (dev)",
           name: "SEKO",
           aosDelay: 100,
           techStack: `PHP (Yii2), Tailwind, jQuery, GSAP, ScrollMagic`,
@@ -101,6 +107,7 @@ const Work = () => {
           },
         },
         {
+          title: "Domino Jewellery (dev)",
           name: "Domino Jewellery",
           aosDelay: 150,
           techStack: `PHP (Yii2), Tailwind, jQuery`,
@@ -129,27 +136,30 @@ const Work = () => {
                       {projectType.type == "personal" &&
                         projectType.projects?.map((project, index) => {
                           return (
-                            <div key={index} className="thumbnail-container" data-aos="fade-up" data-aos-delay={project.aosDelay} data-aos-anchor-placement="center-bottom">
-                              <div className="thumbnail-wrapper">
-                                <div className="thumbnail-overlay">
-                                  <div className="overlay-content">
-                                    <div className="project-info">
-                                      <h4>{project.name}</h4>
-                                      <p>
-                                        <span className="list-title">Tech Stack:</span>
-                                        &nbsp;
-                                        <span className="list">{project.techStack}</span>
-                                      </p>
-                                    </div>
-                                    <a href={project.link} className="view-project" target="_blank">
-                                      <p>View project</p>
-                                      <div className="chevron-forward">
-                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                            <div key={index}>
+                              <h4>{project.title}:</h4>
+                              <div className="thumbnail-container" data-aos="fade-up" data-aos-delay={project.aosDelay} data-aos-anchor-placement="center-bottom">
+                                <div className="thumbnail-wrapper">
+                                  <div className="thumbnail-overlay">
+                                    <div className="overlay-content">
+                                      <div className="project-info">
+                                        <h4>{project.name}</h4>
+                                        <p>
+                                          <span className="list-title">Tech Stack:</span>
+                                          &nbsp;
+                                          <span className="list">{project.techStack}</span>
+                                        </p>
                                       </div>
-                                    </a>
+                                      <a href={project.link} className="view-project" target="_blank">
+                                        <p>View project</p>
+                                        <div className="chevron-forward">
+                                          <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                      </a>
+                                    </div>
                                   </div>
+                                  <img src={project.image.src} className={`thumbnail ${project.image.position}`} alt={project.image.alt} />
                                 </div>
-                                <img src={project.image.src} className={`thumbnail ${project.image.position}`} alt={project.image.alt} />
                               </div>
                             </div>
                           );
@@ -157,27 +167,30 @@ const Work = () => {
                       {projectType.type == "professional" &&
                         projectType.projects?.map((project, index) => {
                           return (
-                            <div key={index} className="thumbnail-container" data-aos="fade-up" data-aos-delay={project.aosDelay} data-aos-anchor-placement="center-bottom">
-                              <div className="thumbnail-wrapper">
-                                <div className="thumbnail-overlay">
-                                  <div className="overlay-content">
-                                    <div className="project-info">
-                                      <h4>{project.name}</h4>
-                                      <p>
-                                        <span className="list-title">Tech Stack:</span>
-                                        &nbsp;
-                                        <span className="list">{project.techStack}</span>
-                                      </p>
-                                    </div>
-                                    <a href={project.link} className="view-project" target="_blank">
-                                      <p>View project</p>
-                                      <div className="chevron-forward">
-                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                            <div key={index}>
+                              <h4>{project.title}:</h4>
+                              <div className="thumbnail-container" data-aos="fade-up" data-aos-delay={project.aosDelay} data-aos-anchor-placement="center-bottom">
+                                <div className="thumbnail-wrapper">
+                                  <div className="thumbnail-overlay">
+                                    <div className="overlay-content">
+                                      <div className="project-info">
+                                        <h4>{project.name}</h4>
+                                        <p>
+                                          <span className="list-title">Tech Stack:</span>
+                                          &nbsp;
+                                          <span className="list">{project.techStack}</span>
+                                        </p>
                                       </div>
-                                    </a>
+                                      <a href={project.link} className="view-project" target="_blank">
+                                        <p>View project</p>
+                                        <div className="chevron-forward">
+                                          <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                      </a>
+                                    </div>
                                   </div>
+                                  <img src={project.image.src} className={`thumbnail ${project.image.position}`} alt={project.image.alt} />
                                 </div>
-                                <img src={project.image.src} className={`thumbnail ${project.image.position}`} alt={project.image.alt} />
                               </div>
                             </div>
                           );
