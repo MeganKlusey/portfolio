@@ -8,7 +8,7 @@ import MyMedium from "../img/mymedium.png";
 import The10Vinyls from "../img/the-10-vinyls.png";
 import HelloWorldByeWorld from "../img/hello-world-bye-world.png";
 import WSMIndustries from "../img/wsm-industries.png";
-import InternalOrdering from "../img/internal-ordering.png";
+import InternalOrdering from "../img/internal-ordering-new.png";
 import SEKO from "../img/seko.png";
 import DominoJewellery from "../img/domino-jewellery.png";
 
@@ -21,7 +21,7 @@ const Work = () => {
         {
           title: "Internal Ordering (design + dev)",
           name: "Internal Ordering",
-          aosDelay: 50,
+          aosDelay: null,
           techStack: `Figma, Laravel, JavaScript, HTML5, SCSS`,
           link: "/internal-ordering/",
           image: {
@@ -32,9 +32,9 @@ const Work = () => {
           },
         },
         {
-          title: "WSM Industries (dev)",
+          title: "WSM Industries (collaborative dev)",
           name: "WSM Industries",
-          aosDelay: null,
+          aosDelay: 50,
           techStack: `WordPress, Tailwind, JavaScript, ScrollMagic`,
           link: "https://wsm-ind.com/",
           image: {
@@ -45,7 +45,7 @@ const Work = () => {
           },
         },
         {
-          title: "SEKO (dev)",
+          title: "SEKO (collaborative dev)",
           name: "SEKO",
           aosDelay: 100,
           techStack: `PHP (Yii2), Tailwind, jQuery, GSAP, ScrollMagic`,
@@ -58,7 +58,7 @@ const Work = () => {
           },
         },
         {
-          title: "Domino Jewellery (dev)",
+          title: "Domino Jewellery (collaborative dev)",
           name: "Domino Jewellery",
           aosDelay: 150,
           techStack: `PHP (Yii2), Tailwind, jQuery`,
