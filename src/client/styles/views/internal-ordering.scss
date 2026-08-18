@@ -1,0 +1,14 @@
+@use "../variables" as *;
+
+.internal-ordering {
+  &-images {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      border: 1px solid $grey-2;
+      width: 50%;
+      position: relative;
+    }
+  }
+}
