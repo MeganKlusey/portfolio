@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 
-import Header from "../client/js/views/index/header";
-import Hero from "../client/js/views/index/hero";
-import About from "../client/js/views/index/about";
-import Work from "../client/js/views/index/work";
-import Contact from "../client/js/views/index/contact";
+import Header from "./js/views/header";
+import Hero from "./js/views/hero";
+import About from "./js/views/about";
+import Work from "./js/views/work";
+import Contact from "./js/views/contact";
 import InternalOrdering from "../client/js/views/internal-ordering";
 
 import "../client/js/birds";

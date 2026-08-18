@@ -3,14 +3,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Modo from "../../img/modo.png";
-import MyMedium from "../../img/mymedium.png";
-import The10Vinyls from "../../img/the-10-vinyls.png";
-import HelloWorldByeWorld from "../../img/hello-world-bye-world.png";
-import WSMIndustries from "../../img/wsm-industries.png";
-import InternalOrdering from "../../img/internal-ordering.png";
-import SEKO from "../../img/seko.png";
-import DominoJewellery from "../../img/domino-jewellery.png";
+import Modo from "../img/modo.png";
+import MyMedium from "../img/mymedium.png";
+import The10Vinyls from "../img/the-10-vinyls.png";
+import HelloWorldByeWorld from "../img/hello-world-bye-world.png";
+import WSMIndustries from "../img/wsm-industries.png";
+import InternalOrdering from "../img/internal-ordering.png";
+import SEKO from "../img/seko.png";
+import DominoJewellery from "../img/domino-jewellery.png";
 
 const Work = () => {
   const projectTypes = [
