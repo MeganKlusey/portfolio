@@ -31,7 +31,6 @@ function WorkOverlay() {
   return (
     <div className="work-overlay">
       <button onClick={() => navigate("/")}>×</button>
-
       <InternalOrdering />
     </div>
   );

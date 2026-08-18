@@ -2,13 +2,14 @@
 
 import React from "react";
 
+import InternalOrderingNew from "../img/internal-ordering.png";
+
 const InternalOrdering = () => {
   return (
     <section className="internal-ordering-container" id="internal-ordering">
-      <div>
-        <p className="internalOrderingText" data-aos-anchor-placement="top-center">
-          Testing
-        </p>
+      <div className="internal-ordering-images">
+        <img src={InternalOrderingNew} className="" alt="" />
+        <img src={InternalOrderingNew} className="" alt="" />
       </div>
     </section>
   );

@@ -174,7 +174,6 @@ const Work = () => {
                           )}
                         </div>
                       </div>
-
                       <img src={project.image.src} className={`thumbnail ${project.image.position || ""}`} alt={project.image.alt} />
                     </div>
                   </div>
