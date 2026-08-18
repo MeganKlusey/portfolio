@@ -141,10 +141,9 @@ const Work = () => {
 
             <div className="thumbnails-container">
               {projectType.projects?.map((project, index) => (
-                <div key={index}>
+                <div key={index} data-aos="fade-up" data-aos-delay={project.aosDelay} data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                   <h4>{project.title}:</h4>
-
-                  <div className="thumbnail-container" data-aos="fade-up" data-aos-delay={project.aosDelay} data-aos-anchor-placement="center-bottom">
+                  <div className="thumbnail-container">
                     <div className="thumbnail-wrapper">
                       <div className="thumbnail-overlay">
                         <div className="overlay-content">
@@ -156,7 +155,6 @@ const Work = () => {
                               <span className="list">{project.techStack}</span>
                             </p>
                           </div>
-
                           {project.name === "Internal Ordering" ? (
                             <Link to="/internal-ordering/" className="view-project">
                               <p>View project</p>
