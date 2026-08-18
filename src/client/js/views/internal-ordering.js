@@ -4,9 +4,9 @@ import React from "react";
 
 const InternalOrdering = () => {
   return (
-    <section className="about-container" id="internal-ordering">
+    <section className="internal-ordering-container" id="internal-ordering">
       <div>
-        <p className="aboutText" data-aos-anchor-placement="top-center" data-aos="zoom-in" data-aos-duration="300">
+        <p className="internalOrderingText" data-aos-anchor-placement="top-center">
           Testing
         </p>
       </div>

@@ -67,13 +67,17 @@ window.onload = function () {
   });
 
   function resizeHeader() {
+    const isHomePage = window.location.pathname === "/";
     const navItems = ["about", "work", "contact"];
-    const isShrunk = document.documentElement.scrollTop > ($(window).width() > 676 ? 160 : 100);
+
+    const isShrunk = !isHomePage || document.documentElement.scrollTop > ($(window).width() > 676 ? 160 : 100);
 
     $("header").toggleClass("shrunk", isShrunk);
+
     $("header .title-wrapper .base").css("fontSize", isShrunk ? "55px" : "120px");
     $("header .title-wrapper .gradient").css("fontSize", isShrunk ? "55px" : "120px");
     $("header .title-wrapper a .base").css("color", isShrunk ? "#b8b8b8" : "transparent");
+
     $.each(navItems, function (i, item) {
       $(`header .${item}-wrapper .base`).css("fontSize", isShrunk ? "28px" : "36px");
       $(`header .${item}-wrapper .gradient`).css("fontSize", isShrunk ? "28px" : "36px");

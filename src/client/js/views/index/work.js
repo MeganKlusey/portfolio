@@ -1,6 +1,8 @@
 "use strict";
 
 import React from "react";
+import { Link } from "react-router-dom";
+
 import Modo from "../../img/modo.png";
 import MyMedium from "../../img/mymedium.png";
 import The10Vinyls from "../../img/the-10-vinyls.png";
@@ -26,6 +28,7 @@ const Work = () => {
             src: InternalOrdering,
             alt: "Internal Ordering thumbnail",
             position: null,
+            target: null,
           },
         },
         {
@@ -38,6 +41,7 @@ const Work = () => {
             src: WSMIndustries,
             alt: "WSM Industries thumbnail",
             position: "cover top",
+            target: "_blank",
           },
         },
         {
@@ -50,6 +54,7 @@ const Work = () => {
             src: SEKO,
             alt: "SEKO thumbnail",
             position: "cover top",
+            target: "_blank",
           },
         },
         {
@@ -62,6 +67,7 @@ const Work = () => {
             src: DominoJewellery,
             alt: "Domino Jewellery thumbnail",
             position: "cover top",
+            target: "_blank",
           },
         },
       ],
@@ -80,6 +86,7 @@ const Work = () => {
             src: Modo,
             alt: "Modo thumbnail",
             position: null,
+            target: "_blank",
           },
         },
         {
@@ -92,6 +99,7 @@ const Work = () => {
             src: MyMedium,
             alt: "My Medium thumbnail",
             position: null,
+            target: "_blank",
           },
         },
         {
@@ -104,6 +112,7 @@ const Work = () => {
             src: The10Vinyls,
             alt: "The 10 Vinyls thumbnail",
             position: null,
+            target: "_blank",
           },
         },
         {
@@ -116,6 +125,7 @@ const Work = () => {
             src: HelloWorldByeWorld,
             alt: "Hello World / Bye World thumbnail",
             position: "cover",
+            target: "_blank",
           },
         },
       ],
@@ -125,82 +135,54 @@ const Work = () => {
   return (
     <section className="work-container" id="work">
       <div className="work-categories">
-        {projectTypes &&
-          projectTypes.map((projectType, index) => {
-            return (
-              <div key={index} className="work-category">
-                {projectType && (
-                  <>
-                    {projectType.title && <h3 data-aos="zoom-in">{projectType.title}</h3>}
-                    <div className="thumbnails-container">
-                      {projectType.type == "professional" &&
-                        projectType.projects?.map((project, index) => {
-                          return (
-                            <div key={index}>
-                              <h4>{project.title}:</h4>
-                              <div className="thumbnail-container" data-aos="fade-up" data-aos-delay={project.aosDelay} data-aos-anchor-placement="center-bottom">
-                                <div className="thumbnail-wrapper">
-                                  <div className="thumbnail-overlay">
-                                    <div className="overlay-content">
-                                      <div className="project-info">
-                                        <h4>{project.name}</h4>
-                                        <p>
-                                          <span className="list-title">Tech Stack:</span>
-                                          &nbsp;
-                                          <span className="list">{project.techStack}</span>
-                                        </p>
-                                      </div>
-                                      <a href={project.link} className="view-project" target="_blank">
-                                        <p>View project</p>
-                                        <div className="chevron-forward">
-                                          <ion-icon name="chevron-forward-outline"></ion-icon>
-                                        </div>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <img src={project.image.src} className={`thumbnail ${project.image.position}`} alt={project.image.alt} />
-                                </div>
+        {projectTypes.map((projectType, index) => (
+          <div key={index} className="work-category">
+            {projectType.title && <h3 data-aos="zoom-in">{projectType.title}</h3>}
+
+            <div className="thumbnails-container">
+              {projectType.projects?.map((project, index) => (
+                <div key={index}>
+                  <h4>{project.title}:</h4>
+
+                  <div className="thumbnail-container" data-aos="fade-up" data-aos-delay={project.aosDelay} data-aos-anchor-placement="center-bottom">
+                    <div className="thumbnail-wrapper">
+                      <div className="thumbnail-overlay">
+                        <div className="overlay-content">
+                          <div className="project-info">
+                            <h4>{project.name}</h4>
+                            <p>
+                              <span className="list-title">Tech Stack:</span>
+                              &nbsp;
+                              <span className="list">{project.techStack}</span>
+                            </p>
+                          </div>
+
+                          {project.name === "Internal Ordering" ? (
+                            <Link to="/internal-ordering/" className="view-project">
+                              <p>View project</p>
+                              <div className="chevron-forward">
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
                               </div>
-                            </div>
-                          );
-                        })}
-                      {projectType.type == "personal" &&
-                        projectType.projects?.map((project, index) => {
-                          return (
-                            <div key={index}>
-                              <h4>{project.title}:</h4>
-                              <div className="thumbnail-container" data-aos="fade-up" data-aos-delay={project.aosDelay} data-aos-anchor-placement="center-bottom">
-                                <div className="thumbnail-wrapper">
-                                  <div className="thumbnail-overlay">
-                                    <div className="overlay-content">
-                                      <div className="project-info">
-                                        <h4>{project.name}</h4>
-                                        <p>
-                                          <span className="list-title">Tech Stack:</span>
-                                          &nbsp;
-                                          <span className="list">{project.techStack}</span>
-                                        </p>
-                                      </div>
-                                      <a href={project.link} className="view-project" target="_blank">
-                                        <p>View project</p>
-                                        <div className="chevron-forward">
-                                          <ion-icon name="chevron-forward-outline"></ion-icon>
-                                        </div>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <img src={project.image.src} className={`thumbnail ${project.image.position}`} alt={project.image.alt} />
-                                </div>
+                            </Link>
+                          ) : (
+                            <a href={project.link} className="view-project" target={project.image.target} rel="noreferrer">
+                              <p>View project</p>
+                              <div className="chevron-forward">
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
                               </div>
-                            </div>
-                          );
-                        })}
+                            </a>
+                          )}
+                        </div>
+                      </div>
+
+                      <img src={project.image.src} className={`thumbnail ${project.image.position || ""}`} alt={project.image.alt} />
                     </div>
-                  </>
-                )}
-              </div>
-            );
-          })}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
