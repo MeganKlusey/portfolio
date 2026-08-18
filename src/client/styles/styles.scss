@@ -55,6 +55,7 @@ body {
   height: 100%;
   overflow-y: auto;
   background: $white;
+  height: calc(100% - 100px);
 
   button {
     position: fixed;
