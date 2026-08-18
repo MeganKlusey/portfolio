@@ -1,14 +1,45 @@
 @use "../variables" as *;
 
 .internal-ordering {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  h2,
+  h4 {
+    width: fit-content;
+  }
+
   &-images {
     display: flex;
     flex-direction: column;
+    gap: 40px;
 
-    img {
-      border: 1px solid $grey-2;
-      width: 50%;
-      position: relative;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      align-items: flex-start;
     }
+  }
+
+  &-item {
+    flex: 1;
+    width: 100%;
+  }
+
+  &-image-wrapper {
+    width: 100%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    border: 1px solid $grey-2;
+  }
+
+  .key-responsibilities {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 1rem;
   }
 }
