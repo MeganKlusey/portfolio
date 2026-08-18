@@ -2,3 +2,7 @@ dist
 node_modules
 *.css
 *.css.map
+src/client/js/.DS_Store
+src/client/.DS_Store
+src/.DS_Store
+.DS_Store
